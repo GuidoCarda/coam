@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "name": "ARGENTINA",
+    "acronym": "ARG",
+    "image": "argentina.webp"
+  },
+  {
+    "id": 2,
+    "name": "BRASIL",
+    "acronym": "BRA",
+    "image": "brasil.webp"
+  },
+  {
+    "id": 3,
+    "name": "BOLIVIA",
+    "acronym": "BOL",
+    "image": "bolivia.webp"
+  },
+  {
+    "id": 4,
+    "name": "CHILE",
+    "acronym": "CHI",
+    "image": "chile.webp"
+  },
+  {
+    "id": 5,
+    "name": "CANADA",
+    "acronym": "CAN",
+    "image": "canada.webp"
+  },
+  {
+    "id": 6,
+    "name": "COLOMBIA",
+    "acronym": "COL",
+    "image": "colombia.webp"
+  },
+  {
+    "id": 7,
+    "name": "COSTA RICA",
+    "acronym": "CRC",
+    "image": "costarica.webp"
+  },
+  {
+    "id": 8,
+    "name": "ECUADOR",
+    "acronym": "ECU",
+    "image": "ecuador.webp"
+  },
+  {
+    "id": 9,
+    "name": "ESTADOS UNIDOS",
+    "acronym": "EUA",
+    "image": "estadosunidos.webp"
+  },
+  {
+    "id": 10,
+    "name": "JAMAICA",
+    "acronym": "JAM",
+    "image": "jamaica.webp"
+  },
+  {
+    "id": 11,
+    "name": "MEXICO",
+    "acronym": "MEX",
+    "image": "estadosunidos.webp"
+  },
+  {
+    "id": 12,
+    "name": "PANAMA",
+    "acronym": "PAN",
+    "image": "panama.webp"
+  },
+  {
+    "id": 13,
+    "name": "PARAGUAY",
+    "acronym": "PAR",
+    "image": "paraguay.webp"
+  },
+  {
+    "id": 14,
+    "name": "PERÚ",
+    "acronym": "PER",
+    "image": "peru.webp"
+  },
+  {
+    "id": 15,
+    "name": "URUGUAY",
+    "acronym": "URU",
+    "image": "uruguay.webp"
+  },
+  {
+    "id": 16,
+    "name": "VENEZUELA",
+    "acronym": "VEN",
+    "image": "venezuela.webp"
+  }
+]
