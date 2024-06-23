@@ -10,8 +10,10 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^4.11.0",
     "@astrojs/check": "^0.7.0",
+    "@fontsource/press-start-2p": "^5.0.20",
+    "astro": "^4.11.0",
+    "nes.css": "^2.3.0",
     "typescript": "^5.5.2"
   }
 }
