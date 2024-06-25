@@ -1,5 +1,6 @@
 ---
-import '@fontsource/press-start-2p';
+import "@fontsource/vt323";
+
 interface Props {
 	title: string;
 }
@@ -22,22 +23,8 @@ const { title } = Astro.props;
 	</body>
 </html>
 <style is:global>
-
-	:root {
-		--accent: 136, 58, 234;
-		--accent-light: 224, 204, 250;
-		--accent-dark: 49, 10, 101;
-		--accent-gradient: linear-gradient(
-			45deg,
-			rgb(var(--accent)),
-			rgb(var(--accent-light)) 30%,
-			white 60%
-		);
-	}
 	html {
-    font-family: 'Press Start 2P', system-ui;
-    background: #13151a;
-		background-size: 224px;
+    font-family: "VT323", monospace;
 	}
 
 	code {
