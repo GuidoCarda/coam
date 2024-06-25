@@ -1,0 +1,33 @@
+---
+interface Props {
+  teamA: string;
+  teamB: string;
+  date: { day: string; time: string };
+}
+
+const { teamA, teamB, date } = Astro.props;
+---
+
+<li
+  class="flex gap-6 items-center justify-between w-full border-[3px] border-black rounded-md p-4"
+>
+  <div class="space-y-4">
+    <div>
+      <img
+        src="/public/Flags/argentina.webp"
+        class="w-16 inline-block"
+        alt=""
+      />
+      <span class="text-xl ml-2">{teamA}</span>
+    </div>
+    <div>
+      <img src="/public/Flags/brasil.webp" class="w-16 inline-block" alt="" />
+      <span class="text-xl ml-2">{teamB}</span>
+    </div>
+  </div>
+
+  <div class="text-center text-lg -space-y-2">
+    <span>{date.day}</span>
+    <span class="block">{date.time}hs</span>
+  </div>
+</li>
