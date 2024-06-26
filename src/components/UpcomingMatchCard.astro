@@ -13,11 +13,19 @@ const { teamA, teamB, date } = Astro.props;
 >
   <div class="space-y-4">
     <div>
-      <img src="/Flags/argentina.webp" class="w-16 inline-block" alt="" />
+      <img
+        src="/Flags/argentina.webp"
+        class="w-16 aspect-video object-cover inline-block"
+        alt=""
+      />
       <span class="text-xl ml-2">{teamA}</span>
     </div>
     <div>
-      <img src="/Flags/brasil.webp" class="w-16 inline-block" alt="" />
+      <img
+        src="/Flags/brasil.webp"
+        class="w-16 aspect-video object-cover inline-block"
+        alt=""
+      />
       <span class="text-xl ml-2">{teamB}</span>
     </div>
   </div>
