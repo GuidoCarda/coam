@@ -1,9 +1,16 @@
 ---
 import PlayerCard from "../../components/PlayerCard.astro";
 import Layout from "../../layouts/Layout.astro";
+import teams from "../../../public/teams.json";
 
 export function getStaticPaths() {
-  return [{ params: { team: "argentina" } }, { params: { team: "brasil" } }];
+  const paths = teams.map((team) => ({
+    params: {
+      team: team.name.toLowerCase(),
+    },
+  }));
+
+  return paths;
 }
 
 const { team } = Astro.params;

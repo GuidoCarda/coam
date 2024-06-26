@@ -2,7 +2,9 @@
 import UpcomingMatchCard from "../components/UpcomingMatchCard.astro";
 import Layout from "../layouts/Layout.astro";
 import Action from "../components/Action.astro";
-import CountryFlagCard from "../components/CountryFlagCard.astro";
+import TeamFlagCard from "../components/TeamFlagCard.astro";
+
+import teams from "../../public/teams.json";
 ---
 
 <Layout title="Coam">
@@ -48,11 +50,8 @@ import CountryFlagCard from "../components/CountryFlagCard.astro";
   <section class="py-16">
     <h2 class="text-6xl text-center mb-20">Selecciones</h2>
 
-    <ul class="grid grid-cols-3 gap-6">
-      <CountryFlagCard country={"argentina"} />
-      <CountryFlagCard country={"brasil"} />
-      <CountryFlagCard country={"colombia"} />
-      <CountryFlagCard country={"chile"} />
+    <ul class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+      {teams.map((team) => <TeamFlagCard team={team} />)}
     </ul>
   </section>
   <footer class="h-16 text-lg flex items-center justify-center">
