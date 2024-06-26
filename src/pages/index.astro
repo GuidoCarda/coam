@@ -4,92 +4,72 @@ import UpcomingMatchCard from "../components/UpcomingMatchCard.astro";
 import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout title="coam">
-  <header class="max-w-screen-lg mx-auto text-lg px-4 lg:px-0">
-    <div
-      class="border-[3px] border-black h-16 px-6 w-full mt-4 rounded-md flex items-center justify-between"
+<Layout title="Coam">
+  <section class="relative py-40 border-b-[3px] border-black">
+    <h1
+      class="text-6xl max-w-[14ch] mb-10 mx-auto text-center md:mx-0 md:text-start"
     >
-      <span class="text-2xl font-bold">COAM</span>
-      <nav class="flex gap-6 uppercase text-xl">
-        <a class="hover:text-[#5896E3] transition-all duration-150" href="#"
-          >Fixture</a
-        >
-        <a class="hover:text-[#5896E3] transition-all duration-150" href="#"
-          >Selecciones</a
-        >
-        <a class="hover:text-[#5896E3] transition-all duration-150" href="#"
-          >Predicciones</a
-        >
-      </nav>
-    </div>
-  </header>
-  <main class="max-w-screen-lg mx-auto px-4 lg:px-0">
-    <section class="relative py-40 border-b-[3px] border-black">
-      <h1
-        class="text-6xl max-w-[14ch] mb-10 mx-auto text-center md:mx-0 md:text-start"
+      PREDICCIONES COPA AMERICA
+      <span class="text-[#F22C2C]">USA</span>
+      <span class="text-[#5896E3]">2023</span>
+    </h1>
+
+    <div class="flex flex-col md:flex-row">
+      <a
+        href="#"
+        class="flex justify-center items-center h-14 bg-black text-white text-xl px-10 rounded-md active:scale-[.99]"
+        >HACE TUS PREDICCIONES</a
       >
-        PREDICCIONES COPA AMERICA
-        <span class="text-[#F22C2C]">USA</span>
-        <span class="text-[#5896E3]">2023</span>
-      </h1>
+      <a
+        href="#"
+        class="flex ml-4 items-center justify-center h-14 text-xl px-10 border-b-4 border-transparent hover:border-black transition-colors active:scale-[.99]"
+        >FIXTURE</a
+      >
+    </div>
+    <img class="absolute hidden md:block right-0 bottom-0" src="/hero.webp" />
+  </section>
+  <section class="py-16">
+    <h2 class="text-6xl text-center mb-20">Proximos partidos</h2>
 
-      <div class="flex flex-col md:flex-row">
-        <a
-          href="#"
-          class="flex justify-center items-center h-14 bg-black text-white text-xl px-10 rounded-md active:scale-[.99]"
-          >HACE TUS PREDICCIONES</a
-        >
-        <a
-          href="#"
-          class="flex ml-4 items-center justify-center h-14 text-xl px-10 border-b-4 border-transparent hover:border-black transition-colors active:scale-[.99]"
-          >FIXTURE</a
-        >
-      </div>
-      <img class="absolute hidden md:block right-0 bottom-0" src="/hero.webp" />
-    </section>
-    <section class="py-16">
-      <h2 class="text-6xl text-center mb-20">Proximos partidos</h2>
+    <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
+      <UpcomingMatchCard
+        teamA="Argentina"
+        teamB="Brasil"
+        date={{ day: "Hoy", time: "22:00" }}
+      />
+      <UpcomingMatchCard
+        teamA="Argentina"
+        teamB="Brasil"
+        date={{ day: "Hoy", time: "22:00" }}
+      />
+      <UpcomingMatchCard
+        teamA="Argentina"
+        teamB="Brasil"
+        date={{ day: "Hoy", time: "22:00" }}
+      />
+    </ul>
+  </section>
+  <section class="py-16">
+    <h2 class="text-6xl text-center mb-20">Selecciones</h2>
 
-      <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
-        <UpcomingMatchCard
-          teamA="Argentina"
-          teamB="Brasil"
-          date={{ day: "Hoy", time: "22:00" }}
-        />
-        <UpcomingMatchCard
-          teamA="Argentina"
-          teamB="Brasil"
-          date={{ day: "Hoy", time: "22:00" }}
-        />
-        <UpcomingMatchCard
-          teamA="Argentina"
-          teamB="Brasil"
-          date={{ day: "Hoy", time: "22:00" }}
-        />
-      </ul>
-    </section>
-    <section class="py-16">
-      <h2 class="text-6xl text-center mb-20">Selecciones</h2>
-
-      <ul class="grid grid-cols-3 gap-6">
-        <CountryFlagCard country={"argentina"} />
-        <CountryFlagCard country={"brasil"} />
-        <CountryFlagCard country={"colombia"} />
-        <CountryFlagCard country={"chile"} />
-      </ul>
-    </section>
-    <footer class="h-16 text-lg flex items-center justify-center">
-      <span
-        >Hecho por <a
-          class="border-b-2 border-transparent hover:border-black transition-colors"
-          target="_blank"
-          href="https://github.com/joaquinvesapa">Joaquin</a
-        > y <a
-          class="border-b-2 border-transparent hover:border-black transition-colors"
-          target="_blank"
-          href="https://github.com/guidocarda">Guido</a
-        > con ♥
-      </span>
-    </footer>
-  </main>
+    <ul class="grid grid-cols-3 gap-6">
+      <CountryFlagCard country={"argentina"} />
+      <CountryFlagCard country={"brasil"} />
+      <CountryFlagCard country={"colombia"} />
+      <CountryFlagCard country={"chile"} />
+    </ul>
+  </section>
+  <footer class="h-16 text-lg flex items-center justify-center">
+    <span
+      >Hecho por <a
+        class="border-b-2 border-transparent hover:border-black transition-colors"
+        target="_blank"
+        href="https://github.com/joaquinvesapa">Joaquin</a
+      > y <a
+        class="border-b-2 border-transparent hover:border-black transition-colors"
+        target="_blank"
+        href="https://github.com/guidocarda">Guido</a
+      > con ♥
+    </span>
+  </footer>
 </Layout>
