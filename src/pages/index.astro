@@ -2,6 +2,7 @@
 import UpcomingMatchCard from "../components/UpcomingMatchCard.astro";
 import Layout from "../layouts/Layout.astro";
 import Action from "../components/Action.astro";
+import CountryFlagCard from "../components/CountryFlagCard.astro";
 ---
 
 <Layout title="Coam">
@@ -44,6 +45,29 @@ import Action from "../components/Action.astro";
       />
     </ul>
   </section>
+  <section class="py-16">
+    <h2 class="text-6xl text-center mb-20">Selecciones</h2>
+
+    <ul class="grid grid-cols-3 gap-6">
+      <CountryFlagCard country={"argentina"} />
+      <CountryFlagCard country={"brasil"} />
+      <CountryFlagCard country={"colombia"} />
+      <CountryFlagCard country={"chile"} />
+    </ul>
+  </section>
+  <footer class="h-16 text-lg flex items-center justify-center">
+    <span
+      >Hecho por <a
+        class="border-b-2 border-transparent hover:border-black transition-colors"
+        target="_blank"
+        href="https://github.com/joaquinvesapa">Joaquin</a
+      > y <a
+        class="border-b-2 border-transparent hover:border-black transition-colors"
+        target="_blank"
+        href="https://github.com/guidocarda">Guido</a
+      > con ♥
+    </span>
+  </footer>
 
   <style></style>
 </Layout>
