@@ -1,0 +1,28 @@
+---
+import CommingMatchCard from "../components/CommingMatchCard.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Fixture">
+  <section class="py-16">
+    <h2 class="text-6xl text-center mb-20">Proximos partidos</h2>
+
+    <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
+      <CommingMatchCard
+        teamA="Argentina"
+        teamB="Brasil"
+        date={{ day: "Hoy", time: "22:00" }}
+      />
+      <CommingMatchCard
+        teamA="Argentina"
+        teamB="Brasil"
+        date={{ day: "Hoy", time: "22:00" }}
+      />
+      <CommingMatchCard
+        teamA="Argentina"
+        teamB="Brasil"
+        date={{ day: "Hoy", time: "22:00" }}
+      />
+    </ul>
+  </section>
+</Layout>
