@@ -9,14 +9,16 @@ const { country } = Astro.props;
 <li
   class="relative cursor-pointer group border-[3px] rounded-md overflow-hidden border-black hover:scale-[1.005] transition-all"
 >
-  <img
-    src={`Flags/${country}.webp`}
-    class="grayscale-[50%] aspect-video object-cover group-hover:grayscale-0"
-    alt=""
-  />
-  <h3
-    class="absolute group-hover:-translate-y-full transition-transform capitalize bg-black border-2 border-black text-white text-3xl w-full text-center"
-  >
-    {country}
-  </h3>
+  <a href={`/teams/${country}`}>
+    <img
+      src={`Flags/${country}.webp`}
+      class="grayscale-[50%] aspect-video object-cover group-hover:grayscale-0"
+      alt=""
+    />
+    <h3
+      class="absolute group-hover:-translate-y-full transition-transform capitalize bg-black border-2 border-black text-white text-3xl w-full text-center"
+    >
+      {country}
+    </h3>
+  </a>
 </li>

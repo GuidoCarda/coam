@@ -1,0 +1,31 @@
+---
+interface Props {
+  fullname: string;
+  role: string;
+  number: number;
+  playerImg: string;
+}
+
+const { number, fullname, role, playerImg } = Astro.props;
+---
+
+<li
+  class="group relative overflow-hidden rounded-md border-[3px] border-black transition-colors bg-[#D2E7FF] hover:scale-[1.005]"
+>
+  <span
+    class="h-12 w-12 rounded-sm bg-black text-white grid place-content-center text-2xl absolute top-0 left-0"
+    >{number}</span
+  >
+  <img
+    src={playerImg}
+    class="mx-auto relative top-10 scale-105 group-hover:-translate-y-2 group-hover:scale-110 duration-150 transition-transform"
+    alt="Imagen Jugador"
+  />
+
+  <div class="relative bg-black px-4 py-3 z-10">
+    <h3 class="text-2xl text-white">{fullname}</h3>
+    <span class="text-slate-200 transition-colors group-hover:text-[#5896E3]"
+      >{role}</span
+    >
+  </div>
+</li>
