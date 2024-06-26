@@ -14,13 +14,13 @@ import Action from "../components/Action.astro";
       <span class="text-[#5896E3]">2023</span>
     </h1>
 
-    <div class="flex flex-col md:flex-row">
-      <Action as="a" href={"predicts"}> HACE TUS PREDICCIONES </Action>
+    <div class="flex flex-col gap-2 md:flex-row">
+      <Action as="a" href={"predicts"}>HACE TUS PREDICCIONES</Action>
 
-      <a
-        href="#"
-        class="flex ml-4 items-center justify-center h-14 text-xl px-10 border-b-4 border-transparent hover:border-black transition-colors active:scale-[.99]"
-        >FIXTURE</a
+      <Action
+        as="a"
+        class="bg-white text-black border-2 border-black"
+        href={"fixture"}>FIXTURE</Action
       >
     </div>
     <img class="absolute hidden md:block right-0 bottom-0" src="/hero.webp" />

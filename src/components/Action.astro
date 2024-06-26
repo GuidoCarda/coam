@@ -9,7 +9,10 @@ const { as: Tag, class: className, ...props } = Astro.props;
 <div class="bg-black/90 rounded-md">
   <Tag
     class:list={[
-      "flex justify-center items-center h-14 bg-black text-white text-xl px-10 rounded-md hover:-translate-y-1 hover:-translate-x-1 transition-all shado active:scale-[.99]",
+      "flex justify-center items-center",
+      " h-14 px-10",
+      "bg-black text-white text-xl rounded-md",
+      "hover:-translate-y-1 hover:-translate-x-1 transition-all active:scale-[.99]",
       className,
     ]}
     {...props}
@@ -17,9 +20,3 @@ const { as: Tag, class: className, ...props } = Astro.props;
     <span class="inline-block"><slot /></span>
   </Tag>
 </div>
-
-<!-- <a
-    href="#"
-    class="flex justify-center items-center h-14 bg-black text-white text-xl px-10 rounded-md hover:-translate-y-1 hover:-translate-x-1 transition-all shado active:scale-[.99]"
-    >HACE TUS PREDICCIONES</a
-  > -->
