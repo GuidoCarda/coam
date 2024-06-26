@@ -1,9 +1,10 @@
 ---
 import type { HTMLTag, Polymorphic } from "astro/types";
 
-type Props<Tag extends HTMLTag> = Polymorphic<{ as: Tag }>;
+type Props<Tag extends HTMLTag> = Polymorphic<{ as: Tag; theme: string }>;
 
-const { as: Tag, class: className, ...props } = Astro.props;
+const { as: Tag, class: className, theme, ...props } = Astro.props;
+console.log(theme);
 ---
 
 <div class="bg-black/90 rounded-md">
@@ -11,7 +12,9 @@ const { as: Tag, class: className, ...props } = Astro.props;
     class:list={[
       "flex justify-center items-center",
       " h-14 px-10",
-      "bg-black text-white text-xl rounded-md",
+      "text-xl rounded-md",
+      theme === "dark" && "bg-black text-white",
+      theme === "white" && "bg-white border-2 border-black text-black",
       "hover:-translate-y-1 hover:-translate-x-1 transition-all active:scale-[.99]",
       className,
     ]}
