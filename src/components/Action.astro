@@ -7,11 +7,11 @@ const { as: Tag, class: className, theme, ...props } = Astro.props;
 console.log(theme);
 ---
 
-<div class="bg-black/90 rounded-md">
+<div class="w-fit bg-black/90 rounded-md">
   <Tag
     class:list={[
       "flex justify-center items-center",
-      " h-14 px-10",
+      "h-14 px-10",
       "text-xl rounded-md",
       theme === "dark" && "bg-black text-white",
       theme === "white" && "bg-white border-2 border-black text-black",
