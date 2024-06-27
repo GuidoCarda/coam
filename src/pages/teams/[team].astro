@@ -42,7 +42,8 @@ const { team } = Astro.params;
       >
       <a class="absolute top-0" href="/">Volver al inicio</a>
       <img
-        src={`/Flags/${team}.webp`}
+        transition:name={`flag-${team}`}
+        src={`/Flags/${team.toLowerCase()}.webp`}
         class="w-20 aspect-video rounded-md border-[3px] border-black"
         alt="Bandera seleccion"
       />
