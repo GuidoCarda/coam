@@ -1,6 +1,7 @@
 import Google from "@auth/core/providers/google";
 import { defineConfig } from "auth-astro";
 
+console.log(import.meta.env.GOOGLE_SECRET_ID)
 export default defineConfig({
 	providers: [
 		Google({

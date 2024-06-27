@@ -4,6 +4,7 @@ import type { HTMLTag, Polymorphic } from "astro/types";
 type Props<Tag extends HTMLTag> = Polymorphic<{ as: Tag; theme: string }>;
 
 const { as: Tag, class: className, theme, ...props } = Astro.props;
+console.log(theme);
 ---
 
 <div class="w-fit bg-black/90 rounded-md">

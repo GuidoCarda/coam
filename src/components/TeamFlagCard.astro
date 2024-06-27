@@ -11,6 +11,7 @@ interface Props {
 }
 
 const { team } = Astro.props;
+console.log(team.name);
 ---
 
 <li
@@ -19,7 +20,7 @@ const { team } = Astro.props;
   <a href={`/teams/${team.name.toLowerCase()}`}>
     <img
       transition:name={`flag-${team.name.toLowerCase()}`}
-      src={`https://cdn.loficenter.lol/flags/${team.image}`}
+      src={`/Flags/${team.image}`}
       class="grayscale-[50%] aspect-video object-cover group-hover:grayscale-0"
       alt=""
     />
