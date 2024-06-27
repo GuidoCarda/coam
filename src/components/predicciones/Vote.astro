@@ -6,7 +6,8 @@ import Action from "../Action.astro";
 <Action id="logout" as="button" theme="white">Cerrar sesión</Action>
 <script>
   const { signOut } = await import("auth-astro/client");
-
-  const $logoutBtn = document.querySelector("#logout");
-  $logoutBtn?.addEventListener("click", () => signOut());
+  document.addEventListener("astro:page-load", () => {
+    const $logoutBtn = document.querySelector("#logout") as HTMLButtonElement;
+    $logoutBtn?.addEventListener("click", () => signOut());
+  });
 </script>
