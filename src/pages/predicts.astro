@@ -1,5 +1,12 @@
 ---
+import Intro from "../components/predicciones/Intro.astro";
+import Vote from "../components/predicciones/Vote.astro";
 import Layout from "../layouts/Layout.astro";
+import { getSession } from "auth-astro/server";
+const SESSION = await getSession(Astro.request);
+console.log(SESSION);
 ---
 
-<Layout title="Predicciones" />
+<Layout title="Predicciones">
+  {SESSION === null ? <Intro /> : <Vote />}
+</Layout>
