@@ -17,13 +17,14 @@ const { team } = Astro.params;
 ---
 
 <Layout title={team}>
-  <section class="py-20">
+  <section class="py-10">
     <!-- <header class="relative rounded-md flex items-center gap-10 mb-20">
       <span class="absolute -top-10 text-2xl text-gray-500 left-0">v1</span>
 
       <div class="h-36">
         <img
-          src="/Flags/argentina.webp"
+          transition:name={`flag-${team}`}
+          src={`https://cdn.loficenter.lol/flags/${team.toLowerCase()}.webp`}
           class="h-full aspect-square rounded-md border-[3px] border-black object-cover"
           alt="Bandera seleccion"
         />
@@ -36,15 +37,18 @@ const { team } = Astro.params;
     <header
       class="group relative py-4 rounded-md border-black flex items-center gap-14 mb-10"
     >
-      <span
+      <!-- <span
         class="absolute hidden -top-10 group-hover:block text-2xl text-gray-500 left-0"
         >v2</span
+      > -->
+      <a
+        class="absolute -top-5 text-lg hover:scale-[1.02] transition-transform"
+        href="/">Volver al inicio</a
       >
-      <a class="absolute top-0" href="/">Volver al inicio</a>
       <img
         transition:name={`flag-${team}`}
-        src={`/Flags/${team.toLowerCase()}.webp`}
-        class="w-20 aspect-video rounded-md border-[3px] border-black"
+        src={`https://cdn.loficenter.lol/flags/${team.toLowerCase()}.webp`}
+        class="w-48 aspect-video rounded-md border-[3px] border-black"
         alt="Bandera seleccion"
       />
       <div>
@@ -57,8 +61,8 @@ const { team } = Astro.params;
     >
       <span class="absolute -top-10 text-2xl text-gray-500 left-0">v3</span>
       <img
-        src="/Flags/argentina.webp"
-        class="w-20 aspect-video rounded-md border-[3px] border-black"
+        src={`https://cdn.loficenter.lol/flags/${team.toLowerCase()}.webp`}
+        class="w-48 aspect-video rounded-md border-[3px] border-black"
         alt="Bandera seleccion"
       />
       <div>
