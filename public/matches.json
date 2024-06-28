@@ -1,0 +1,701 @@
+[
+  {
+    "matchId": "g2414542",
+    "matchDay": "1",
+    "date": "2024-06-21 01:00:00",
+    "timeZone": "BST",
+    "team_data": [
+      {
+        "score": "2",
+        "side": "Home",
+        "teamref": "t632",
+        "team": "Argentina",
+        "team_id": 1
+      },
+      {
+        "score": "0",
+        "side": "Away",
+        "teamref": "t597",
+        "team": "Canada",
+        "team_id": 5
+      }
+    ]
+  },
+  {
+    "matchId": "g2414549",
+    "matchDay": "1",
+    "date": "2024-06-22 23:00:00",
+    "timeZone": "BST",
+    "team_data": [
+      {
+        "score": "1",
+        "side": "Home",
+        "teamref": "t830",
+        "team": "Ecuador",
+        "team_id": 8
+      },
+      {
+        "score": "2",
+        "side": "Away",
+        "teamref": "t833",
+        "team": "Venezuela",
+        "team_id": 16
+      }
+    ],
+    "stadium": "Levi's Stadium"
+  },
+  {
+    "matchId": "g2414543",
+    "matchDay": "1",
+    "date": "2024-06-22 01:00:00",
+    "timeZone": "BST",
+    "team_data": [
+      {
+        "score": "0",
+        "side": "Home",
+        "teamref": "t834",
+        "team": "Peru",
+        "team_id": 14
+      },
+      {
+        "score": "0",
+        "side": "Away",
+        "teamref": "t831",
+        "team": "Chile",
+        "team_id": 4
+      }
+    ],
+    "stadium": "AT&T Stadium"
+  },
+  {
+    "matchId": "g2414548",
+    "matchDay": "1",
+    "date": "2024-06-23 02:00:00",
+    "timeZone": "BST",
+    "team_data": [
+      {
+        "score": "1",
+        "side": "Home",
+        "teamref": "t659",
+        "team": "Mexico",
+        "team_id": 11
+      },
+      {
+        "score": "0",
+        "side": "Away",
+        "teamref": "t1723",
+        "team": "Jamaica",
+        "team_id": 10
+      }
+    ],
+    "stadium": "NRG Stadium"
+  },
+  {
+    "matchId": "g2414555",
+    "matchDay": "1",
+    "date": "2024-06-23 23:00:00",
+    "timeZone": "BST",
+    "team_data": [
+      {
+        "score": "2",
+        "side": "Home",
+        "teamref": "t596",
+        "team": "USA",
+        "team_id": 9
+      },
+      {
+        "score": "0",
+        "side": "Away",
+        "teamref": "t836",
+        "team": "Bolivia",
+        "team_id": 3
+      }
+    ],
+    "stadium": "AT&T Stadium"
+  },
+  {
+    "matchId": "g2414560",
+    "matchDay": "1",
+    "date": "2024-06-24 23:00:00",
+    "timeZone": "BST",
+    "team_data": [
+      {
+        "score": "2",
+        "side": "Home",
+        "teamref": "t832",
+        "team": "Colombia",
+        "team_id": 6
+      },
+      {
+        "score": "1",
+        "side": "Away",
+        "teamref": "t835",
+        "team": "Paraguay",
+        "team_id": 13
+      }
+    ],
+    "stadium": "NRG Stadium"
+  },
+  {
+    "matchId": "g2414554",
+    "matchDay": "1",
+    "date": "2024-06-24 02:00:00",
+    "timeZone": "BST",
+    "team_data": [
+      {
+        "score": "3",
+        "side": "Home",
+        "teamref": "t837",
+        "team": "Uruguay",
+        "team_id": 15
+      },
+      {
+        "score": "1",
+        "side": "Away",
+        "teamref": "t1869",
+        "team": "Panama",
+        "team_id": 12
+      }
+    ],
+    "stadium": "Hard Rock Stadium"
+  },
+  {
+    "matchId": "g2414561",
+    "matchDay": "1",
+    "date": "2024-06-25 02:00:00",
+    "timeZone": "BST",
+    "team_data": [
+      {
+        "score": "0",
+        "side": "Home",
+        "teamref": "t614",
+        "team": "Brazil",
+        "team_id": 2
+      },
+      {
+        "score": "0",
+        "side": "Away",
+        "teamref": "t838",
+        "team": "Costa Rica",
+        "team_id": 7
+      }
+    ],
+    "stadium": "SoFi Stadium"
+  },
+  {
+    "matchId": "g2414545",
+    "matchDay": "2",
+    "date": "2024-06-25 23:00:00",
+    "timeZone": "BST",
+    "team_data": [
+      {
+        "score": "0",
+        "side": "Home",
+        "teamref": "t834",
+        "team": "Peru",
+        "team_id": 14
+      },
+      {
+        "score": "1",
+        "side": "Away",
+        "teamref": "t597",
+        "team": "Canada",
+        "team_id": 5
+      }
+    ],
+    "stadium": "Children's Mercy Park"
+  },
+  {
+    "matchId": "g2414544",
+    "matchDay": "2",
+    "date": "2024-06-26 02:00:00",
+    "timeZone": "BST",
+    "team_data": [
+      {
+        "score": "0",
+        "side": "Home",
+        "teamref": "t831",
+        "team": "Chile",
+        "team_id": 4
+      },
+      {
+        "score": "1",
+        "side": "Away",
+        "teamref": "t632",
+        "team": "Argentina",
+        "team_id": 1
+      }
+    ],
+    "stadium": "MetLife Stadium"
+  },
+  {
+    "matchId": "g2414550",
+    "matchDay": "2",
+    "date": "2024-06-26 23:00:00",
+    "timeZone": "BST",
+    "team_data": [
+      {
+        "score": "3",
+        "side": "Home",
+        "teamref": "t830",
+        "team": "Ecuador",
+        "team_id": 8
+      },
+      {
+        "score": "1",
+        "side": "Away",
+        "teamref": "t1723",
+        "team": "Jamaica",
+        "team_id": 10
+      }
+    ],
+    "stadium": "Allegiant Stadium"
+  },
+  {
+    "matchId": "g2414557",
+    "matchDay": "2",
+    "date": "2024-06-27 23:00:00",
+    "timeZone": "BST",
+    "team_data": [
+      {
+        "score": "2",
+        "side": "Home",
+        "teamref": "t1869",
+        "team": "Panama",
+        "team_id": 12
+      },
+      {
+        "score": "1",
+        "side": "Away",
+        "teamref": "t596",
+        "team": "USA",
+        "team_id": 9
+      }
+    ],
+    "stadium": "Mercedes-Benz Stadium"
+  },
+  {
+    "matchId": "g2414551",
+    "matchDay": "2",
+    "date": "2024-06-27 02:00:00",
+    "timeZone": "BST",
+    "team_data": [
+      {
+        "score": "1",
+        "side": "Home",
+        "teamref": "t833",
+        "team": "Venezuela",
+        "team_id": 16
+      },
+      {
+        "score": "0",
+        "side": "Away",
+        "teamref": "t659",
+        "team": "Mexico",
+        "team_id": 11
+      }
+    ],
+    "stadium": "SoFi Stadium"
+  },
+  {
+    "matchId": "g2414562",
+    "matchDay": "2",
+    "date": "2024-06-28 23:00:00",
+    "timeZone": "BST",
+    "team_data": [
+      {
+        "score": "",
+        "side": "Home",
+        "teamref": "t832",
+        "team": "Colombia"
+      },
+      {
+        "score": "",
+        "side": "Away",
+        "teamref": "t838",
+        "team": "Costa Rica"
+      }
+    ],
+    "stadium": "State Farm Stadium"
+  },
+  {
+    "matchId": "g2414556",
+    "matchDay": "2",
+    "date": "2024-06-28 02:00:00",
+    "timeZone": "BST",
+    "team_data": [
+      {
+        "score": "5",
+        "side": "Home",
+        "teamref": "t837",
+        "team": "Uruguay",
+        "team_id": 15
+      },
+      {
+        "score": "0",
+        "side": "Away",
+        "teamref": "t836",
+        "team": "Bolivia",
+        "team_id": 3
+      }
+    ],
+    "stadium": "MetLife Stadium"
+  },
+  {
+    "matchId": "g2414563",
+    "matchDay": "2",
+    "date": "2024-06-29 02:00:00",
+    "timeZone": "BST",
+    "team_data": [
+      {
+        "score": "",
+        "side": "Home",
+        "teamref": "t835",
+        "team": "Paraguay"
+      },
+      {
+        "score": "",
+        "side": "Away",
+        "teamref": "t614",
+        "team": "Brazil"
+      }
+    ],
+    "stadium": "Allegiant Stadium"
+  },
+  {
+    "matchId": "g2414546",
+    "matchDay": "3",
+    "date": "2024-06-30 01:00:00",
+    "timeZone": "BST",
+    "team_data": [
+      {
+        "score": "",
+        "side": "Home",
+        "teamref": "t632",
+        "team": "Argentina"
+      },
+      {
+        "score": "",
+        "side": "Away",
+        "teamref": "t834",
+        "team": "Peru"
+      }
+    ],
+    "stadium": "Hard Rock Stadium"
+  },
+  {
+    "matchId": "g2414547",
+    "matchDay": "3",
+    "date": "2024-06-30 01:00:00",
+    "timeZone": "BST",
+    "team_data": [
+      {
+        "score": "",
+        "side": "Home",
+        "teamref": "t597",
+        "team": "Canada"
+      },
+      {
+        "score": "",
+        "side": "Away",
+        "teamref": "t831",
+        "team": "Chile"
+      }
+    ],
+    "stadium": "Inter&Co Stadium"
+  },
+  {
+    "matchId": "g2414552",
+    "matchDay": "3",
+    "date": "2024-07-01 01:00:00",
+    "timeZone": "BST",
+    "team_data": [
+      {
+        "score": "",
+        "side": "Home",
+        "teamref": "t1723",
+        "team": "Jamaica"
+      },
+      {
+        "score": "",
+        "side": "Away",
+        "teamref": "t833",
+        "team": "Venezuela"
+      }
+    ],
+    "stadium": "Q2 Stadium"
+  },
+  {
+    "matchId": "g2414553",
+    "matchDay": "3",
+    "date": "2024-07-01 01:00:00",
+    "timeZone": "BST",
+    "team_data": [
+      {
+        "score": "",
+        "side": "Home",
+        "teamref": "t659",
+        "team": "Mexico"
+      },
+      {
+        "score": "",
+        "side": "Away",
+        "teamref": "t830",
+        "team": "Ecuador"
+      }
+    ],
+    "stadium": "State Farm Stadium"
+  },
+  {
+    "matchId": "g2414558",
+    "matchDay": "3",
+    "date": "2024-07-02 02:00:00",
+    "timeZone": "BST",
+    "team_data": [
+      {
+        "score": "",
+        "side": "Home",
+        "teamref": "t836",
+        "team": "Bolivia"
+      },
+      {
+        "score": "",
+        "side": "Away",
+        "teamref": "t1869",
+        "team": "Panama"
+      }
+    ],
+    "stadium": "Inter&Co Stadium"
+  },
+  {
+    "matchId": "g2414559",
+    "matchDay": "3",
+    "date": "2024-07-02 02:00:00",
+    "timeZone": "BST",
+    "team_data": [
+      {
+        "score": "",
+        "side": "Home",
+        "teamref": "t596",
+        "team": "USA"
+      },
+      {
+        "score": "",
+        "side": "Away",
+        "teamref": "t837",
+        "team": "Uruguay"
+      }
+    ],
+    "stadium": "Arrowhead Stadium"
+  },
+  {
+    "matchId": "g2414565",
+    "matchDay": "3",
+    "date": "2024-07-03 02:00:00",
+    "timeZone": "BST",
+    "team_data": [
+      {
+        "score": "",
+        "side": "Home",
+        "teamref": "t614",
+        "team": "Brazil"
+      },
+      {
+        "score": "",
+        "side": "Away",
+        "teamref": "t832",
+        "team": "Colombia"
+      }
+    ],
+    "stadium": "Levi's Stadium"
+  },
+  {
+    "matchId": "g2414564",
+    "matchDay": "3",
+    "date": "2024-07-03 02:00:00",
+    "timeZone": "BST",
+    "team_data": [
+      {
+        "score": "",
+        "side": "Home",
+        "teamref": "t838",
+        "team": "Costa Rica"
+      },
+      {
+        "score": "",
+        "side": "Away",
+        "teamref": "t835",
+        "team": "Paraguay"
+      }
+    ],
+    "stadium": "Q2 Stadium"
+  },
+  {
+    "matchId": "g2414566",
+    "matchDay": "4",
+    "date": "2024-07-05 02:00:00",
+    "timeZone": "BST",
+    "team_data": [
+      {
+        "score": "",
+        "side": "Home",
+        "teamref": "t1908",
+        "team": "Group A Winner"
+      },
+      {
+        "score": "",
+        "side": "Away",
+        "teamref": "t1917",
+        "team": "Group B Second Place"
+      }
+    ],
+    "stadium": "NRG Stadium"
+  },
+  {
+    "matchId": "g2414567",
+    "matchDay": "4",
+    "date": "2024-07-06 02:00:00",
+    "timeZone": "BST",
+    "team_data": [
+      {
+        "score": "",
+        "side": "Home",
+        "teamref": "t1909",
+        "team": "Group B Winner"
+      },
+      {
+        "score": "",
+        "side": "Away",
+        "teamref": "t1916",
+        "team": "Group A Second Place"
+      }
+    ],
+    "stadium": "AT&T Stadium"
+  },
+  {
+    "matchId": "g2414568",
+    "matchDay": "4",
+    "date": "2024-07-06 23:00:00",
+    "timeZone": "BST",
+    "team_data": [
+      {
+        "score": "",
+        "side": "Home",
+        "teamref": "t1911",
+        "team": "Group D Winner"
+      },
+      {
+        "score": "",
+        "side": "Away",
+        "teamref": "t1918",
+        "team": "Group C Second Place"
+      }
+    ],
+    "stadium": "State Farm Stadium"
+  },
+  {
+    "matchId": "g2414569",
+    "matchDay": "4",
+    "date": "2024-07-07 02:00:00",
+    "timeZone": "BST",
+    "team_data": [
+      {
+        "score": "",
+        "side": "Home",
+        "teamref": "t1910",
+        "team": "Group C Winner"
+      },
+      {
+        "score": "",
+        "side": "Away",
+        "teamref": "t1919",
+        "team": "Group D Second Place"
+      }
+    ],
+    "stadium": "Allegiant Stadium"
+  },
+  {
+    "matchId": "g2414571",
+    "matchDay": "5",
+    "date": "2024-07-10 01:00:00",
+    "timeZone": "BST",
+    "team_data": [
+      {
+        "score": "",
+        "side": "Home",
+        "teamref": "t1932",
+        "team": "Quarter-Final 1 Winner"
+      },
+      {
+        "score": "",
+        "side": "Away",
+        "teamref": "t1933",
+        "team": "Quarter-Final 2 Winner"
+      }
+    ],
+    "stadium": "MetLife Stadium"
+  },
+  {
+    "matchId": "g2414572",
+    "matchDay": "5",
+    "date": "2024-07-11 01:00:00",
+    "timeZone": "BST",
+    "team_data": [
+      {
+        "score": "",
+        "side": "Home",
+        "teamref": "t1934",
+        "team": "Quarter-Final 3 Winner"
+      },
+      {
+        "score": "",
+        "side": "Away",
+        "teamref": "t1935",
+        "team": "Quarter-Final 4 Winner"
+      }
+    ],
+    "stadium": "Bank of America Stadium"
+  },
+  {
+    "matchId": "g2414573",
+    "matchDay": "6",
+    "date": "2024-07-14 01:00:00",
+    "timeZone": "BST",
+    "team_data": [
+      {
+        "score": "",
+        "side": "Home",
+        "teamref": "t1938",
+        "team": "Semi-Final 1 Loser"
+      },
+      {
+        "score": "",
+        "side": "Away",
+        "teamref": "t1939",
+        "team": "Semi-Final 2 Loser"
+      }
+    ],
+    "stadium": "Bank of America Stadium"
+  },
+  {
+    "matchId": "g2414574",
+    "matchDay": "7",
+    "date": "2024-07-15 01:00:00",
+    "timeZone": "BST",
+    "team_data": [
+      {
+        "score": "",
+        "side": "Home",
+        "teamref": "t1936",
+        "team": "Semi-Final 1 Winner"
+      },
+      {
+        "score": "",
+        "side": "Away",
+        "teamref": "t1937",
+        "team": "Semi-Final 2 Winner"
+      }
+    ],
+    "stadium": "Hard Rock Stadium"
+  }
+]

@@ -1,0 +1,114 @@
+[
+  {
+    "team_name": "Argentina",
+    "teamRef": "t632",
+    "id": 1,
+    "acronym": "ARG",
+    "image": "argentina.webp"
+  },
+  {
+    "team_name": "Brazil",
+    "teamRef": "t614",
+    "id": 2,
+    "acronym": "BRA",
+    "image": "brasil.webp"
+  },
+  {
+    "team_name": "Bolivia",
+    "teamRef": "t836",
+    "id": 3,
+    "acronym": "BOL",
+    "image": "bolivia.webp"
+  },
+  {
+    "team_name": "Chile",
+    "teamRef": "t831",
+    "id": 4,
+    "acronym": "CHI",
+    "image": "chile.webp"
+  },
+  {
+    "team_name": "Canada",
+    "teamRef": "t597",
+    "id": 5,
+    "acronym": "CAN",
+    "image": "canada.webp"
+  },
+  {
+    "team_name": "Colombia",
+    "teamRef": "t832",
+    "id": 6,
+    "acronym": "COL",
+    "image": "colombia.webp"
+  },
+  {
+    "team_name": "Costa Rica",
+    "teamRef": "t838",
+    "id": 7,
+    "acronym": "CRC",
+    "image": "costarica.webp"
+  },
+  {
+    "team_name": "Ecuador",
+    "teamRef": "t830",
+    "id": 8,
+    "acronym": "ECU",
+    "image": "ecuador.webp"
+  },
+  {
+    "team_name": "USA",
+    "teamRef": "t596",
+    "id": 9,
+    "acronym": "EUA",
+    "image": "estadosunidos.webp"
+  },
+  {
+    "team_name": "Jamaica",
+    "teamRef": "t1723",
+    "id": 10,
+    "acronym": "JAM",
+    "image": "jamaica.webp"
+  },
+  {
+    "team_name": "Mexico",
+    "teamRef": "t659",
+    "id": 11,
+    "acronym": "MEX",
+    "image": "mexico.webp"
+  },
+  {
+    "team_name": "Panama",
+    "teamRef": "t1869",
+    "id": 12,
+    "acronym": "PAN",
+    "image": "panama.webp"
+  },
+  {
+    "team_name": "Paraguay",
+    "teamRef": "t835",
+    "id": 13,
+    "acronym": "PAR",
+    "image": "paraguay.webp"
+  },
+  {
+    "team_name": "Peru",
+    "teamRef": "t834",
+    "id": 14,
+    "acronym": "PER",
+    "image": "peru.webp"
+  },
+  {
+    "team_name": "Uruguay",
+    "teamRef": "t837",
+    "id": 15,
+    "acronym": "URU",
+    "image": "uruguay.webp"
+  },
+  {
+    "team_name": "Venezuela",
+    "teamRef": "t833",
+    "id": 16,
+    "acronym": "VEN",
+    "image": "venezuela.webp"
+  }
+]
