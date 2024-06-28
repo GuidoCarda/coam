@@ -1,10 +1,11 @@
 ---
 import PlayerCard from "../../components/PlayerCard.astro";
 import Layout from "../../layouts/Layout.astro";
-import teams from "../../../public/teams.json";
+import TEAMS from "../../../public/teams.json";
+import PLAYERS from "../../../public/players.json"
 
 export function getStaticPaths() {
-  const paths = teams.map((team) => ({
+  const paths = TEAMS.map((team) => ({
     params: {
       team: team.name.toLowerCase(),
     },
@@ -14,33 +15,16 @@ export function getStaticPaths() {
 }
 
 const { team } = Astro.params;
+const teamIdx = TEAMS.findIndex(t=> t.name.toLowerCase() === team )
+const players = PLAYERS[teamIdx].players;
+
 ---
 
 <Layout title={team}>
   <section class="py-10">
-    <!-- <header class="relative rounded-md flex items-center gap-10 mb-20">
-      <span class="absolute -top-10 text-2xl text-gray-500 left-0">v1</span>
-
-      <div class="h-36">
-        <img
-          transition:name={`flag-${team}`}
-          src={`https://cdn.loficenter.lol/flags/${team.toLowerCase()}.webp`}
-          class="h-full aspect-square rounded-md border-[3px] border-black object-cover"
-          alt="Bandera seleccion"
-        />
-      </div>
-      <div>
-        <h1 class="text-6xl capitalize">{team}</h1>
-        <span class="relative -top-1 text-gray-600">La Albiceleste</span>
-      </div>
-    </header> -->
     <header
       class="group relative py-4 rounded-md border-black flex items-center gap-14 mb-10"
     >
-      <!-- <span
-        class="absolute hidden -top-10 group-hover:block text-2xl text-gray-500 left-0"
-        >v2</span
-      > -->
       <a
         class="absolute -top-5 text-lg hover:scale-[1.02] transition-transform"
         href="/">Volver al inicio</a
@@ -56,46 +40,14 @@ const { team } = Astro.params;
         <span class="relative -top-1">La Albiceleste</span>
       </div>
     </header>
-    <!-- <header
-      class="relative border-b-[3px] pb-8 border-black flex flex-col gap-4 mb-20"
-    >
-      <span class="absolute -top-10 text-2xl text-gray-500 left-0">v3</span>
-      <img
-        src={`https://cdn.loficenter.lol/flags/${team.toLowerCase()}.webp`}
-        class="w-48 aspect-video rounded-md border-[3px] border-black"
-        alt="Bandera seleccion"
-      />
-      <div>
-        <h1 class="text-6xl capitalize">{team}</h1>
-        <span class="relative -top-1">La Albiceleste</span>
-      </div>
-    </header> -->
-    <h2 class="text-4xl capitalize mb-10">Equipo</h2>
+   <h2 class="text-4xl capitalize mb-10">Equipo</h2>
     <ul class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-      <PlayerCard
-        fullname="Julian Alvarez"
-        role="Delantero"
-        playerImg="https://copaamerica.com/_next/image?url=%2Fplayers%2Fargentina%2Fargentina-09.png&w=384&q=75"
-        number={9}
-      />
-      <PlayerCard
-        fullname="Leonel Messi"
-        role="Delantero"
-        playerImg="https://copaamerica.com/_next/image?url=%2Fplayers%2Fargentina%2Fargentina-10.png&w=384&q=75"
-        number={10}
-      />
-      <PlayerCard
-        fullname="Angel Di Maria"
-        role="Delantero"
-        playerImg="https://copaamerica.com/_next/image?url=%2Fplayers%2Fargentina%2Fargentina-11.png&w=384&q=75"
-        number={11}
-      />
-      <PlayerCard
-        fullname="Emiliano Martinez"
-        role="Arquero"
-        playerImg="https://copaamerica.com/_next/image?url=%2Fplayers%2Fargentina%2Fargentina-23.png&w=384&q=75"
-        number={23}
-      />
+      {players.map((player)=>(<PlayerCard
+        fullname={player.name}
+        role={player.position}
+        playerImg={player.image}
+        number={player.number}
+      />))}
     </ul>
   </section>
 </Layout>
