@@ -1,3 +1,9 @@
+---
+import { getSession } from "auth-astro/server";
+const SESSION = await getSession(Astro.request);
+const usrImg = SESSION?.user?.image;
+---
+
 <header class="max-w-screen-lg mx-auto text-lg px-4 lg:px-0">
   <div
     class="border-[3px] border-black h-16 px-6 w-full mt-4 rounded-md flex items-center justify-between"
@@ -10,7 +16,7 @@
         alt=""
       />
     </a>
-    <nav class="flex gap-6 uppercase text-xl">
+    <nav class="flex items-center gap-6 uppercase text-xl">
       <a
         href="/fixture"
         class="hover:text-[#5896E3] transition-all duration-150">Fixture</a
@@ -22,6 +28,16 @@
         href="/predicts"
         class="hover:text-[#5896E3] transition-all duration-150">Predicciones</a
       >
+      {
+        SESSION != null && (
+          <img
+            src={usrImg}
+            class="w-11 h-full rounded-full border-2 border-black"
+            style="image-rendering: pixelated;"
+            alt=""
+          />
+        )
+      }
     </nav>
   </div>
 </header>
