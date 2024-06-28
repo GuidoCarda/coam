@@ -2,7 +2,7 @@
 import PlayerCard from "../../components/PlayerCard.astro";
 import Layout from "../../layouts/Layout.astro";
 import TEAMS from "../../../public/teams.json";
-import PLAYERS from "../../../public/players.json"
+import PLAYERS from "../../../public/players.json";
 
 export function getStaticPaths() {
   const paths = TEAMS.map((team) => ({
@@ -15,9 +15,8 @@ export function getStaticPaths() {
 }
 
 const { team } = Astro.params;
-const teamIdx = TEAMS.findIndex(t=> t.name.toLowerCase() === team )
+const teamIdx = TEAMS.findIndex((t) => t.name.toLowerCase() === team);
 const players = PLAYERS[teamIdx].players;
-
 ---
 
 <Layout title={team}>
@@ -40,14 +39,18 @@ const players = PLAYERS[teamIdx].players;
         <span class="relative -top-1">La Albiceleste</span>
       </div>
     </header>
-   <h2 class="text-4xl capitalize mb-10">Equipo</h2>
-    <ul class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-      {players.map((player)=>(<PlayerCard
-        fullname={player.name}
-        role={player.position}
-        playerImg={player.image}
-        number={player.number}
-      />))}
+    <h2 class="text-4xl capitalize mb-10">Equipo</h2>
+    <ul class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+      {
+        players.map((player) => (
+          <PlayerCard
+            fullname={player.name}
+            role={player.position}
+            playerImg={player.image}
+            number={player.number}
+          />
+        ))
+      }
     </ul>
   </section>
 </Layout>
