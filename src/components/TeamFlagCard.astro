@@ -18,6 +18,7 @@ const { team } = Astro.props;
 >
   <a href={`/teams/${team.name.toLowerCase()}`}>
     <img
+      decoding="async"
       transition:name={`flag-${team.name.toLowerCase()}`}
       src={`https://cdn.loficenter.lol/flags/${team.image}`}
       class="grayscale-[50%] aspect-video object-cover group-hover:grayscale-0"

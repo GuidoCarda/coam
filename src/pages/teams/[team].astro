@@ -30,7 +30,7 @@ const players = PLAYERS[teamIdx].players;
       >
       <img
         transition:name={`flag-${team}`}
-        src={`https://cdn.loficenter.lol/flags/${team.toLowerCase()}.webp`}
+        src={`https://cdn.loficenter.lol/flags/${team.replace(" ", "").toLowerCase()}.webp`}
         class="w-48 aspect-video rounded-md border-[3px] border-black"
         alt="Bandera seleccion"
       />
