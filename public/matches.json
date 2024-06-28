@@ -307,13 +307,15 @@
         "score": "",
         "side": "Home",
         "teamref": "t832",
-        "team": "Colombia"
+        "team": "Colombia",
+        "team_id": 6
       },
       {
         "score": "",
         "side": "Away",
         "teamref": "t838",
-        "team": "Costa Rica"
+        "team": "Costa Rica",
+        "team_id": 7
       }
     ],
     "stadium": "State Farm Stadium"
@@ -351,13 +353,15 @@
         "score": "",
         "side": "Home",
         "teamref": "t835",
-        "team": "Paraguay"
+        "team": "Paraguay",
+        "team_id": 13
       },
       {
         "score": "",
         "side": "Away",
         "teamref": "t614",
-        "team": "Brazil"
+        "team": "Brazil",
+        "team_id": 2
       }
     ],
     "stadium": "Allegiant Stadium"
@@ -372,13 +376,15 @@
         "score": "",
         "side": "Home",
         "teamref": "t632",
-        "team": "Argentina"
+        "team": "Argentina",
+        "team_id": 1
       },
       {
         "score": "",
         "side": "Away",
         "teamref": "t834",
-        "team": "Peru"
+        "team": "Peru",
+        "team_id": 14
       }
     ],
     "stadium": "Hard Rock Stadium"
@@ -393,13 +399,15 @@
         "score": "",
         "side": "Home",
         "teamref": "t597",
-        "team": "Canada"
+        "team": "Canada",
+        "team_id": 5
       },
       {
         "score": "",
         "side": "Away",
         "teamref": "t831",
-        "team": "Chile"
+        "team": "Chile",
+        "team_id": 4
       }
     ],
     "stadium": "Inter&Co Stadium"
@@ -414,13 +422,15 @@
         "score": "",
         "side": "Home",
         "teamref": "t1723",
-        "team": "Jamaica"
+        "team": "Jamaica",
+        "team_id": 10
       },
       {
         "score": "",
         "side": "Away",
         "teamref": "t833",
-        "team": "Venezuela"
+        "team": "Venezuela",
+        "team_id": 16
       }
     ],
     "stadium": "Q2 Stadium"
@@ -435,13 +445,15 @@
         "score": "",
         "side": "Home",
         "teamref": "t659",
-        "team": "Mexico"
+        "team": "Mexico",
+        "team_id": 11
       },
       {
         "score": "",
         "side": "Away",
         "teamref": "t830",
-        "team": "Ecuador"
+        "team": "Ecuador",
+        "team_id": 8
       }
     ],
     "stadium": "State Farm Stadium"
@@ -456,13 +468,15 @@
         "score": "",
         "side": "Home",
         "teamref": "t836",
-        "team": "Bolivia"
+        "team": "Bolivia",
+        "team_id": 3
       },
       {
         "score": "",
         "side": "Away",
         "teamref": "t1869",
-        "team": "Panama"
+        "team": "Panama",
+        "team_id": 12
       }
     ],
     "stadium": "Inter&Co Stadium"
@@ -477,13 +491,15 @@
         "score": "",
         "side": "Home",
         "teamref": "t596",
-        "team": "USA"
+        "team": "USA",
+        "team_id": 9
       },
       {
         "score": "",
         "side": "Away",
         "teamref": "t837",
-        "team": "Uruguay"
+        "team": "Uruguay",
+        "team_id": 15
       }
     ],
     "stadium": "Arrowhead Stadium"
@@ -498,13 +514,15 @@
         "score": "",
         "side": "Home",
         "teamref": "t614",
-        "team": "Brazil"
+        "team": "Brazil",
+        "team_id": 2
       },
       {
         "score": "",
         "side": "Away",
         "teamref": "t832",
-        "team": "Colombia"
+        "team": "Colombia",
+        "team_id": 6
       }
     ],
     "stadium": "Levi's Stadium"
@@ -519,13 +537,15 @@
         "score": "",
         "side": "Home",
         "teamref": "t838",
-        "team": "Costa Rica"
+        "team": "Costa Rica",
+        "team_id": 7
       },
       {
         "score": "",
         "side": "Away",
         "teamref": "t835",
-        "team": "Paraguay"
+        "team": "Paraguay",
+        "team_id": 13
       }
     ],
     "stadium": "Q2 Stadium"
