@@ -4,10 +4,83 @@ import Action from "../Action.astro";
 
 <h1>Hace tu prediccion</h1>
 <Action id="logout" as="button" theme="white">Cerrar sesión</Action>
+<section class="form">
+  <form id="form-votes">
+    <div
+      class="flex flex-row justify-between w-fit items-center p-10 border-2 border-black rounded-xl"
+    >
+      <label class="flex flex-col">
+        <img
+          class="w-20"
+          src="https://cdn.loficenter.lol/flags/argentina.webp"
+          alt=""
+        />
+        <input
+          class="text-2xl w-auto border-b-2 border-black text-center"
+          type="number"
+          pattern="^\s*-?[0-9]{1,10}\s*$"
+        />
+      </label>
+      <label class="flex flex-col">
+        <img
+          class="w-20"
+          src="https://cdn.loficenter.lol/flags/argentina.webp"
+          alt=""
+        />
+        <input type="number" />
+      </label>
+    </div>
+  </form>
+</section>
+
+<Action id="send-predict" as="button" theme="white">Predictear</Action>
 <script>
+  import type { Vote } from "../../types/vote";
+  import { getSession } from "auth-astro/server";
+
   const { signOut } = await import("auth-astro/client");
   document.addEventListener("astro:page-load", () => {
     const $logoutBtn = document.querySelector("#logout") as HTMLButtonElement;
     $logoutBtn?.addEventListener("click", () => signOut());
   });
+
+  // document.addEventListener("astro:page-load", () => {
+  //   const $predictBtn = document.querySelector(
+  //     "#send-predict",
+  //   ) as HTMLButtonElement;
+
+  //   const winner =
+
+  //   const vote : Vote = {
+  //     id_match: "g2414542",
+  //     team_away_id: 1,
+  //     team_home_id: 5,
+  //     score_away: 2,
+  //     score_home: 1,
+  //     team_winner_id:
+  //   }
+
+  //   $predictBtn?.addEventListener("click", () => {
+  //     fetch(`/api/votes/${"1234asdf"}`, {
+  //       method: "POST",
+  //       headers: {
+  //         "Content-Type": "application/json",
+  //       },
+  //       body: JSON.stringify({
+  //         name: "guidochupapija",
+  //       }),
+  //     })
+  //       .then((res: Response) => {
+  //         if (!res.ok) {
+  //           console.log(res);
+  //         } else {
+  //           return res.json();
+  //         }
+  //       })
+  //       .then(console.log)
+  //       .catch((e) => {
+  //         console.log(e);
+  //       });
+  //   });
+  // });
 </script>
