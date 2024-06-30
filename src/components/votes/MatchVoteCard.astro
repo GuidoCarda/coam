@@ -1,0 +1,53 @@
+---
+import type { Match } from "../../types/matchs";
+import TEAMS from "../../../public/teamsv2.json" assert { type: "json" };
+
+interface Props {
+  match: Match;
+  classMatch: string;
+}
+const { match, classMatch } = Astro.props;
+// console.log(new Date(match.date) < new Date());
+---
+
+<div
+  class="flex flex-row justify-between w-fit items-center gap-5 px-5 py-3 border-2 border-black rounded-xl"
+>
+  <label class="w-24 flex gap-2 flex-col items-center">
+    <img
+      class="w-20 aspect-video object-cover border-2 border-black rounded-md"
+      src=`https://cdn.loficenter.lol/flags/${TEAMS.find(team => team.teamRef === match.team_data[0].teamref)?.image}`
+      alt=""
+    />
+    <input
+      data-team-id={match.team_data[0].team_id}
+      data-match-id={match.matchId}
+      data-team-type={match.team_data[0].side}
+      class={`text-4xl w-10 border-b-2 border-dashed border-black text-center ${classMatch}`}
+      type="number"
+      pattern="^\s*-?[0-9]{1,10}\s*$"
+      data-played={new Date(match.date) < new Date()}
+      value={match.team_data[0].score !== "" ? match.team_data[0].score : ""}
+      readonly={match.team_data[0].score !== "" && true}
+    />
+  </label>
+  <span class="text-3xl">VS</span>
+  <label class="w-24 flex gap-2 flex-col items-center">
+    <img
+      class="w-20 aspect-video object-cover border-2 border-black rounded-md"
+      src=`https://cdn.loficenter.lol/flags/${TEAMS.find(team => team.teamRef === match.team_data[1].teamref)?.image}`
+      alt=""
+    />
+    <input
+      data-team-id={match.team_data[1].team_id}
+      data-match-id={match.matchId}
+      data-team-type={match.team_data[1].side}
+      class={`text-4xl w-10 border-b-2 border-dashed border-black text-center ${classMatch}`}
+      type="number"
+      pattern="^\s*-?[0-9]{1,10}\s*$"
+      data-played={new Date(match.date) < new Date()}
+      value={match.team_data[1].score !== "" ? match.team_data[1].score : ""}
+      readonly={match.team_data[1].score !== ""}
+    />
+  </label>
+</div>

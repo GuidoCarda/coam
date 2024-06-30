@@ -19,6 +19,7 @@ const { number, fullname, role, playerImg } = Astro.props;
 
   <div class="w-full aspect-[9/8] sm:aspect-[9/12]">
     <img
+      decoding="async"
       src={playerImg}
       class="max-h-full object-cover mx-auto relative top-10 scale-105 group-hover:-translate-y-2 group-hover:scale-110 duration-150 transition-transform"
       alt="Imagen Jugador"

@@ -1,12 +1,17 @@
 ---
 import type { HTMLTag, Polymorphic } from "astro/types";
 
-type Props<Tag extends HTMLTag> = Polymorphic<{ as: Tag; theme: string }>;
+type Props<Tag extends HTMLTag> = Polymorphic<{
+  as: Tag;
+  theme: string;
+  type?: string;
+  value?: string;
+}>;
 
-const { as: Tag, class: className, theme, ...props } = Astro.props;
+const { as: Tag, class: className, theme, type, value, ...props } = Astro.props;
 ---
 
-<div class="w-fit bg-black/90 rounded-md">
+<div class="w-fit h-14 bg-black/90 rounded-md">
   <Tag
     class:list={[
       "flex justify-center items-center",
@@ -17,6 +22,8 @@ const { as: Tag, class: className, theme, ...props } = Astro.props;
       "hover:-translate-y-1 hover:-translate-x-1 transition-all active:scale-[.99]",
       className,
     ]}
+    {value}
+    {type}
     {...props}
   >
     <span class="inline-block"><slot /></span>

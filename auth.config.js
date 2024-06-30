@@ -7,7 +7,7 @@ export default defineConfig({
 			clientId: import.meta.env.AUTH_GOOGLE_ID,
 			clientSecret: import.meta.env.AUTH_GOOGLE_SECRET
 		})],
-	secret: process.env.AUTH_SECRET,
+	secret: import.meta.env.AUTH_SECRET,
 	callbacks: {
 		session: ({ session, token }) => ({
 			...session,

@@ -4,9 +4,20 @@ import Vote from "../components/predicciones/Vote.astro";
 import Layout from "../layouts/Layout.astro";
 import { getSession } from "auth-astro/server";
 const SESSION = await getSession(Astro.request);
-console.log(SESSION);
+console.log(SESSION?.user?.id?.length);
 ---
 
 <Layout title="Predicciones">
   {SESSION === null ? <Intro /> : <Vote />}
+  <script>
+    // import { db } from "../db/db.ts";
+    // import { users } from "../schemas/users.ts";
+    // const response = await fetch("/api/users", { method: "GET" }).then((res) =>
+    //   res.json(),
+    // );
+    // console.log(response);
+    // const allUsers = await db.select().from(users);
+
+    // console.log(allUsers);
+  </script>
 </Layout>
