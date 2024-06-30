@@ -1,86 +1,158 @@
 ---
+import MatchVoteCard from "../votes/MatchVoteCard.astro";
+import type { Match } from "../../types/matchs";
+import MATCHES from "../../../public/matches.json" assert { type: "json" };
 import Action from "../Action.astro";
+// MATCHES.
+const GROUPMATCHES = MATCHES.filter(
+  (match) => match.date < "2024-07-05"
+) as unknown as Match[];
+
+const QUARTERMATCHES = MATCHES.filter(
+  (match) => match.matchDay == "4"
+) as unknown as Match[];
+
+const SEMIMATCHES = MATCHES.filter(
+  (match) => match.matchDay === "5"
+) as unknown as Match[];
+
+const THIRDANDFOURTH = MATCHES.filter(
+  (match) => match.matchDay === "6"
+) as unknown as Match[];
+
+const FINALS = MATCHES.filter(
+  (match) => match.matchDay === "7"
+) as unknown as Match[];
 ---
 
 <h1>Hace tu prediccion</h1>
 <Action id="logout" as="button" theme="white">Cerrar sesión</Action>
-<section class="form">
-  <form id="form-votes">
-    <div
-      class="flex flex-row justify-between w-fit items-center p-10 border-2 border-black rounded-xl"
-    >
-      <label class="flex flex-col">
-        <img
-          class="w-20"
-          src="https://cdn.loficenter.lol/flags/argentina.webp"
-          alt=""
-        />
-        <input
-          class="text-2xl w-auto border-b-2 border-black text-center"
-          type="number"
-          pattern="^\s*-?[0-9]{1,10}\s*$"
-        />
-      </label>
-      <label class="flex flex-col">
-        <img
-          class="w-20"
-          src="https://cdn.loficenter.lol/flags/argentina.webp"
-          alt=""
-        />
-        <input type="number" />
-      </label>
-    </div>
+<br />
+<section id="group-stage">
+  <h2 class="text-4xl pb-5">Fase de grupos</h2>
+  <form id="form-votes" class="grid grid-cols-3 gap-3">
+    {
+      GROUPMATCHES.map((match) => (
+        <MatchVoteCard match={match} classMatch="group-input" />
+      ))
+    }
+    <Action
+      id="send-predict"
+      as="input"
+      type="submit"
+      value={"Enviar Predicciones"}
+      theme="white"
+    />
   </form>
 </section>
-
-<Action id="send-predict" as="button" theme="white">Predictear</Action>
 <script>
+  import { Side } from "../../types/matchs";
   import type { Vote } from "../../types/vote";
   import { getSession } from "auth-astro/server";
-
   const { signOut } = await import("auth-astro/client");
+
   document.addEventListener("astro:page-load", () => {
     const $logoutBtn = document.querySelector("#logout") as HTMLButtonElement;
     $logoutBtn?.addEventListener("click", () => signOut());
   });
 
-  // document.addEventListener("astro:page-load", () => {
-  //   const $predictBtn = document.querySelector(
-  //     "#send-predict",
-  //   ) as HTMLButtonElement;
+  const predictionsForm = document.querySelector("#form-votes");
 
-  //   const winner =
+  predictionsForm?.addEventListener("submit", (e) => {
+    e.preventDefault();
 
-  //   const vote : Vote = {
-  //     id_match: "g2414542",
-  //     team_away_id: 1,
-  //     team_home_id: 5,
-  //     score_away: 2,
-  //     score_home: 1,
-  //     team_winner_id:
-  //   }
+    /*
+    Aca hago una asercion de tipos / type assertion
+    Esto lo que hace es indicarle a ts que 
+    nosotros sabemos que el form va a tener elementos de este
+    tipo y por lo tanto ts va a confiar en esto y no lo va a checkear.
+    const foo = 'bar' as type   -> Type assertion
+    Por otro lado si usara anotaciones de tipo / type anotation, ts 
+    va a esperar que el contenido sea de ese tipo pero va a checkear e 
+    indicar si encuentra alguna diferencia o error.
+    const foo: type = 'bar'     ->  Type annotation
+    */
+    const form = e.target as HTMLFormElement;
+    const elements = Array.from(form.elements) as HTMLInputElement[];
 
-  //   $predictBtn?.addEventListener("click", () => {
-  //     fetch(`/api/votes/${"1234asdf"}`, {
-  //       method: "POST",
-  //       headers: {
-  //         "Content-Type": "application/json",
-  //       },
-  //       body: JSON.stringify({
-  //         name: "guidochupapija",
-  //       }),
-  //     })
-  //       .then((res: Response) => {
-  //         if (!res.ok) {
-  //           console.log(res);
-  //         } else {
-  //           return res.json();
-  //         }
-  //       })
-  //       .then(console.log)
-  //       .catch((e) => {
-  //         console.log(e);
-  //       });
-  //   });
-  // });
+    const inputs = elements.filter(
+      (input) =>
+        !input.hasAttribute("data-played") &&
+        input.type !== "button" &&
+        input.type !== "submit"
+    );
+
+    // Definir la interfaz para el objeto de entrada
+    interface InputGroup {
+      team_home_id?: string;
+      home_value?: string;
+      team_away_id?: string;
+      away_value?: string;
+    }
+
+    // Definir la interfaz para el objeto de predicción
+    interface Prediction {
+      match_id: string;
+      team_home_id?: string;
+      home_value?: string;
+      team_away_id?: string;
+      away_value?: string;
+    }
+
+    // Crear un objeto para agrupar inputs por match_id
+    const groupedByMatchId = inputs.reduce<Record<string, InputGroup>>(
+      (acc, input) => {
+        const matchId = input.dataset.matchId; // Suponiendo que tienes un atributo data-match-id
+        if (matchId) {
+          if (!acc[matchId]) {
+            acc[matchId] = {};
+          }
+          if (input.dataset.teamType === Side.Home) {
+            acc[matchId].team_home_id = input.dataset.teamId;
+            acc[matchId].home_value = input.value;
+          } else if (input.dataset.teamType === Side.Away) {
+            acc[matchId].team_away_id = input.dataset.teamId;
+            acc[matchId].away_value = input.value;
+          }
+        }
+        return acc;
+      },
+      {}
+    );
+
+    // Convertir el objeto agrupado en un array de predicciones
+    const predictions: Vote[] = Object.keys(groupedByMatchId).map((matchId) => {
+      const match = groupedByMatchId[matchId];
+      return {
+        id_match: matchId,
+        team_home_id: Number(match.team_home_id),
+        team_away_id: Number(match.team_away_id),
+        score_home: Number(match.home_value),
+        score_away: Number(match.away_value),
+      } as unknown as Vote;
+    });
+
+    console.log(predictions);
+
+    fetch(`/api/votes/sendVote`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(predictions),
+    })
+      .then((res: Response) => {
+        if (!res.ok) {
+          console.log(res);
+        } else {
+          return res.json();
+        }
+      })
+      .then(console.log)
+      .catch((e) => {
+        console.log(e);
+      });
+    // $predictBtn?.addEventListener("click", () => {
+    // });
+  });
 </script>
