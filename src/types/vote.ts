@@ -6,5 +6,5 @@ export interface Vote {
   team_away_id: number,
   score_home: number,
   score_away: number,
-  team_winner_id?: number
+  team_winner_id?: number | null
 }
