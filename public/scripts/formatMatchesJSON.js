@@ -13,8 +13,6 @@ matches.forEach((match, i) => {
   match.team_data = [teamDataHome, teamDataAway]
 })
 
-
-
 teamsv2.forEach(team =>
   matches.filter(match => match.team_data[0].teamref.includes(team.teamRef)).forEach((match, i) => {
     let idTeamHome = teamsv2.filter(team => team.teamRef === match.team_data[0].teamref)[0].id
