@@ -304,14 +304,14 @@
     "timeZone": "BST",
     "team_data": [
       {
-        "score": "",
+        "score": "3",
         "side": "Home",
         "teamref": "t832",
         "team": "Colombia",
         "team_id": 6
       },
       {
-        "score": "",
+        "score": "0",
         "side": "Away",
         "teamref": "t838",
         "team": "Costa Rica",
@@ -350,14 +350,14 @@
     "timeZone": "BST",
     "team_data": [
       {
-        "score": "",
+        "score": "1",
         "side": "Home",
         "teamref": "t835",
         "team": "Paraguay",
         "team_id": 13
       },
       {
-        "score": "",
+        "score": "4",
         "side": "Away",
         "teamref": "t614",
         "team": "Brazil",
@@ -373,14 +373,14 @@
     "timeZone": "BST",
     "team_data": [
       {
-        "score": "",
+        "score": "2",
         "side": "Home",
         "teamref": "t632",
         "team": "Argentina",
         "team_id": 1
       },
       {
-        "score": "",
+        "score": "0",
         "side": "Away",
         "teamref": "t834",
         "team": "Peru",
@@ -396,14 +396,14 @@
     "timeZone": "BST",
     "team_data": [
       {
-        "score": "",
+        "score": "0",
         "side": "Home",
         "teamref": "t597",
         "team": "Canada",
         "team_id": 5
       },
       {
-        "score": "",
+        "score": "0",
         "side": "Away",
         "teamref": "t831",
         "team": "Chile",
@@ -419,14 +419,14 @@
     "timeZone": "BST",
     "team_data": [
       {
-        "score": "",
+        "score": "0",
         "side": "Home",
         "teamref": "t1723",
         "team": "Jamaica",
         "team_id": 10
       },
       {
-        "score": "",
+        "score": "3",
         "side": "Away",
         "teamref": "t833",
         "team": "Venezuela",
@@ -442,14 +442,14 @@
     "timeZone": "BST",
     "team_data": [
       {
-        "score": "",
+        "score": "0",
         "side": "Home",
         "teamref": "t659",
         "team": "Mexico",
         "team_id": 11
       },
       {
-        "score": "",
+        "score": "0",
         "side": "Away",
         "teamref": "t830",
         "team": "Ecuador",
@@ -559,14 +559,16 @@
       {
         "score": "",
         "side": "Home",
-        "teamref": "t1908",
-        "team": "Group A Winner"
+        "teamref": "t632",
+        "team": "Argentina",
+        "team_id": 1
       },
       {
         "score": "",
         "side": "Away",
-        "teamref": "t1917",
-        "team": "Group B Second Place"
+        "teamref": "t830",
+        "team": "Ecuador",
+        "team_id": 8
       }
     ],
     "stadium": "NRG Stadium"
@@ -580,14 +582,16 @@
       {
         "score": "",
         "side": "Home",
-        "teamref": "t1909",
-        "team": "Group B Winner"
+        "teamref": "t833",
+        "team": "Venezuela",
+        "team_id": 16
       },
       {
         "score": "",
         "side": "Away",
-        "teamref": "t1916",
-        "team": "Group A Second Place"
+        "teamref": "t597",
+        "team": "Canada",
+        "team_id": 5
       }
     ],
     "stadium": "AT&T Stadium"
@@ -602,13 +606,15 @@
         "score": "",
         "side": "Home",
         "teamref": "t1911",
-        "team": "Group D Winner"
+        "team": "Group D Winner",
+        "team_id": null
       },
       {
         "score": "",
         "side": "Away",
         "teamref": "t1918",
-        "team": "Group C Second Place"
+        "team": "Group C Second Place",
+        "team_id": null
       }
     ],
     "stadium": "State Farm Stadium"
@@ -623,13 +629,15 @@
         "score": "",
         "side": "Home",
         "teamref": "t1910",
-        "team": "Group C Winner"
+        "team": "Group C Winner",
+        "team_id": null
       },
       {
         "score": "",
         "side": "Away",
         "teamref": "t1919",
-        "team": "Group D Second Place"
+        "team": "Group D Second Place",
+        "team_id": null
       }
     ],
     "stadium": "Allegiant Stadium"
@@ -644,13 +652,15 @@
         "score": "",
         "side": "Home",
         "teamref": "t1932",
-        "team": "Quarter-Final 1 Winner"
+        "team": "Quarter-Final 1 Winner",
+        "team_id": null
       },
       {
         "score": "",
         "side": "Away",
         "teamref": "t1933",
-        "team": "Quarter-Final 2 Winner"
+        "team": "Quarter-Final 2 Winner",
+        "team_id": null
       }
     ],
     "stadium": "MetLife Stadium"
@@ -665,13 +675,15 @@
         "score": "",
         "side": "Home",
         "teamref": "t1934",
-        "team": "Quarter-Final 3 Winner"
+        "team": "Quarter-Final 3 Winner",
+        "team_id": null
       },
       {
         "score": "",
         "side": "Away",
         "teamref": "t1935",
-        "team": "Quarter-Final 4 Winner"
+        "team": "Quarter-Final 4 Winner",
+        "team_id": null
       }
     ],
     "stadium": "Bank of America Stadium"
@@ -686,13 +698,15 @@
         "score": "",
         "side": "Home",
         "teamref": "t1938",
-        "team": "Semi-Final 1 Loser"
+        "team": "Semi-Final 1 Loser",
+        "team_id": null
       },
       {
         "score": "",
         "side": "Away",
         "teamref": "t1939",
-        "team": "Semi-Final 2 Loser"
+        "team": "Semi-Final 2 Loser",
+        "team_id": null
       }
     ],
     "stadium": "Bank of America Stadium"
@@ -707,13 +721,15 @@
         "score": "",
         "side": "Home",
         "teamref": "t1936",
-        "team": "Semi-Final 1 Winner"
+        "team": "Semi-Final 1 Winner",
+        "team_id": null
       },
       {
         "score": "",
         "side": "Away",
         "teamref": "t1937",
-        "team": "Semi-Final 2 Winner"
+        "team": "Semi-Final 2 Winner",
+        "team_id": null
       }
     ],
     "stadium": "Hard Rock Stadium"
