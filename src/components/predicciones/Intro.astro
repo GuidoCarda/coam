@@ -2,9 +2,41 @@
 import Action from "../Action.astro";
 ---
 
-<h1>Intro</h1>
-<Action theme="white" as="button" id="login">Login</Action>
+<section
+  class="relative flex items-center justify-center py-40 md:justify-between"
+>
+  <div class="w-96">
+    <h1
+      class="text-6xl pb-5 max-w-[14ch]mx-auto text-center md:mx-0 md:text-start"
+    >
+      HACE TUS PREDICCIONES
+      <!-- <span class="text-[#F22C2C]">USA</span>
+      <span class="text-[#5896E3]">2023</span> -->
+    </h1>
+    <p
+      class="text-2xl pb-5 leading-6 text-center text-balance mb-2 md:text-start"
+    >
+      Comenza a demostrar tu conocimiento y ponete a prueba prediciendo y
+      comparando con los resultados oficiales de la <span class="text-[#F22C2C]"
+        >COPA AMERICA USA</span
+      >
+      <span class="text-[#5896E3]">2023</span>
+    </p>
 
+    <div class="flex flex-col gap-2 items-center md:flex-row md:items-start">
+      <Action id="login" class="flex" theme="dark" as="a" href={"predicts"}
+        >INICIA SESIÓN CON GOOGLE <span
+          ><img class="w-8" src="/google_icon.png" /></span
+        ></Action
+      >
+    </div>
+  </div>
+  <img
+    class="absolute hidden md:block right-0 bottom-0 w-7/12"
+    src="/jugadores_frente.webp"
+  />
+</section>
+<!-- <section class="py-16"> -->
 <script>
   document.addEventListener("astro:page-load", () => {
     const $loginBtn = document.querySelector("#login");
@@ -31,3 +63,4 @@ import Action from "../Action.astro";
     });
   });
 </script>
+<!-- </section> -->
