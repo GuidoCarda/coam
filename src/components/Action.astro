@@ -26,6 +26,6 @@ const { as: Tag, class: className, theme, type, value, ...props } = Astro.props;
     {type}
     {...props}
   >
-    <span class="inline-block"><slot /></span>
+    <span class="flex justify-between items-center gap-3"><slot /></span>
   </Tag>
 </div>
