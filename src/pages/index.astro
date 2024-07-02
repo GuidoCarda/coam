@@ -4,7 +4,7 @@ import Layout from "../layouts/Layout.astro";
 import Action from "../components/Action.astro";
 import TeamFlagCard from "../components/TeamFlagCard.astro";
 
-import teams from "../../public/teams.json";
+import TEAMS from "../../public/teams.json";
 ---
 
 <Layout title="Coam">
@@ -49,11 +49,82 @@ import teams from "../../public/teams.json";
   </section>
   <section class="py-16">
     <h2 class="text-6xl text-center mb-20">Selecciones</h2>
-
-    <ul class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-      {teams.map((team) => <TeamFlagCard team={team} />)}
+    <ul class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+      {TEAMS.map((team) => <TeamFlagCard team={team} />)}
     </ul>
   </section>
 
-  <style></style>
+  <section class="py-16">
+    <h2 class="text-6xl text-center mb-20">Sobre el proyecto</h2>
+    <img />
+
+    <div class="flex justify-evenly mb-10 items-center">
+      <div class="hidden lg:flex flex-col gap-2">
+        <span class="block h-10 w-10 bg-black rounded-md"></span>
+        <span class="block h-10 w-10 bg-black rounded-md"></span>
+        <span class="block h-10 w-10 bg-black rounded-md"></span>
+      </div>
+      <div
+        class="hidden lg:block relative group aspect-square w-48 rounded-lg bg-black"
+      >
+        <img
+          class="border-[3px] border-black rounded-md h-full w-full object-cover"
+          src="/devs/joaco.webp"
+        />
+        <span
+          class="absolute text-xl group-hover:translate-y-8 opacity-0 group-hover:opacity-100 transition-all -z-10 -bottom-0 text-center w-full left-0"
+          >Joaquin Vesco Aparicio</span
+        >
+      </div>
+      <p
+        class="text-center lg:text-left text-2xl leading-7 text-balance max-w-[70ch]"
+      >
+        Somos dos desarrolladores de software que buscan sumar proyectos copados
+        a nuestro portfolio y darnos a conocer. Por eso, nos mandamos a hacer
+        predicciones de la Copa América.
+      </p>
+    </div>
+
+    <div class="flex justify-evenly items-center">
+      <p
+        class="text-center lg:text-right text-2xl leading-7 mt-4 text-balance max-w-[70ch]"
+      >
+        Aunque no somos fanáticos del fútbol ni expertos en datos, nos encanta
+        la tecnología y creemos que podemos aportar una mirada fresca. Con este
+        proyecto, queremos demostrar nuestras habilidades y divertirnos en el
+        proceso.
+      </p>
+      <div
+        class="hidden lg:block relative group aspect-square w-48 rounded-lg bg-black"
+      >
+        <img
+          class="border-[3px] border-black rounded-md h-full w-full object-cover"
+          src="/devs/guido.webp"
+        />
+        <span
+          class="absolute text-xl group-hover:translate-y-8 opacity-0 group-hover:opacity-100 transition-all -z-10 -bottom-0 text-center w-full left-0"
+          >Guido Cardarelli</span
+        >
+      </div>
+      <div class="hidden lg:flex flex-col gap-2">
+        <span class="block h-10 w-10 border-[3px] border-black rounded-md"
+        ></span>
+        <span class="block h-10 w-10 border-[3px] border-black rounded-md"
+        ></span>
+        <span class="block h-10 w-10 border-[3px] border-black rounded-md"
+        ></span>
+      </div>
+    </div>
+
+    <div class="flex flex-col py-6 mt-20 gap-4 items-center rounded-md">
+      <h3 class="text-2xl mx-auto text-center max-w-lg">
+        ¡Sumate dejando tus predicciones y descubrí con nosotros quién tiene más
+        chances de llevarse la copa!
+      </h3>
+      <Action theme="dark" as="a" href={"predicts"}
+        >HACE TUS PREDICCIONES</Action
+      >
+    </div>
+  </section>
 </Layout>
+<style></style>
