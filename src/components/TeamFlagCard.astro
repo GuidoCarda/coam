@@ -13,20 +13,19 @@ interface Props {
 const { team } = Astro.props;
 ---
 
-<li
-  class="relative cursor-pointer group border-[3px] rounded-md overflow-hidden border-black hover:scale-[1.005] transition-all"
->
-  <a href={`/teams/${team.name.toLowerCase()}`}>
+<li class="bg-black/90 group transition-transform border-black rounded-md">
+  <a
+    href={`/teams/${team.name.toLowerCase()}`}
+    class="border-[3px] overflow-hidden border-black rounded-md grid transition-transform place-content-center h-full relative group-hover:-translate-y-1 group-hover:-translate-x-1"
+  >
     <img
       decoding="async"
       transition:name={`flag-${team.name.toLowerCase()}`}
       src={`https://cdn.loficenter.lol/flags/${team.image}`}
-      class="grayscale-[50%] aspect-video object-cover group-hover:grayscale-0"
+      class="aspect-video"
       alt=""
     />
-    <h3
-      class="absolute group-hover:-translate-y-full transition-transform capitalize bg-black border-2 border-black text-white text-3xl w-full text-center"
-    >
+    <h3 class="capitalize bg-black text-white text-3xl w-full text-center">
       {team.name}
     </h3>
   </a>
