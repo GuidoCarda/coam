@@ -52,9 +52,9 @@
         "position": "Centro campista"
       },
       {
-        "id": "1-marcosacu\\xf1a-8",
+        "id": "1-marcosacuña-8",
         "number": 8,
-        "name": "Marcos Acu\\xf1a",
+        "name": "Marcos Acuña",
         "image": "https://copaamerica.com/_next/image?url=%2Fplayers%2Fargentina%2Fargentina-08.png&w=384&q=75",
         "position": "Centro campista"
       },
@@ -294,18 +294,18 @@
         "position": "Defensa"
       },
       {
-        "id": "2-gabrieldos santos magalh\\xe3es-14",
+        "id": "2-gabrieldossantosmmagalhães-14",
         "team": "BRASIL",
         "number": 14,
-        "name": "Gabriel Dos Santos Magalh\\xe3es",
+        "name": "Gabriel Dos Santos Magalhães",
         "image": "https://copaamerica.com/_next/image?url=%2Fplayers%2Fbrasil%2Fbrasil-14.png&w=384&q=75",
         "position": "Defensa"
       },
       {
-        "id": "2-jo\\xe3ovictor gomes-15",
+        "id": "2-joãovictor gomes-15",
         "team": "BRASIL",
         "number": 15,
-        "name": "Jo\\xe3o Victor Gomes",
+        "name": "João  Victor Gomes",
         "image": "https://copaamerica.com/_next/image?url=%2Fplayers%2Fbrasil%2Fbrasil-15.png&w=384&q=75",
         "position": "Centro campista"
       },
@@ -483,10 +483,10 @@
         "position": "Centro campista"
       },
       {
-        "id": "3-carmeloalgara\\xf1az-11",
+        "id": "3-carmeloalgarañaz-11",
         "team": "BOLIVIA",
         "number": 11,
-        "name": "Carmelo Algara\\xf1az",
+        "name": "Carmelo Algarañaz",
         "image": "https://copaamerica.com/_next/image?url=%2Fplayers%2Fbolivia%2Fbolivia-11.png&w=384&q=75",
         "position": "Delantero"
       },
@@ -664,10 +664,10 @@
         "position": "Defensa"
       },
       {
-        "id": "4-marcelinonu\\xf1ez-7",
+        "id": "4-marcelinonuñez-7",
         "team": "CHILE",
         "number": 7,
-        "name": "Marcelino Nu\\xf1ez",
+        "name": "Marcelino Nuñez",
         "image": "https://copaamerica.com/_next/image?url=%2Fplayers%2Fchile%2Fchile-07.png&w=384&q=75",
         "position": "Centro campista"
       },
@@ -877,18 +877,18 @@
         "position": "Centro campista"
       },
       {
-        "id": "5-stepheneust\\xe1quio-7",
+        "id": "5-stepheneustaquio-7",
         "team": "CANADA",
         "number": 7,
-        "name": "Stephen Eust\\xe1quio",
+        "name": "Stephen Eusaquio",
         "image": "https://copaamerica.com/_next/image?url=%2Fplayers%2Fcanada%2Fcanada-07.png&w=384&q=75",
         "position": "Centro campista"
       },
       {
-        "id": "5-isma\\xeblkon\\xe9-8",
+        "id": "5-ismaëlkoné-8",
         "team": "CANADA",
         "number": 8,
-        "name": "Isma\\xebl Kon\\xe9",
+        "name": "Ismaël Koné",
         "image": "https://copaamerica.com/_next/image?url=%2Fplayers%2Fcanada%2Fcanada-08.png&w=384&q=75",
         "position": "Centro campista"
       },
@@ -941,18 +941,18 @@
         "position": "Delantero"
       },
       {
-        "id": "5-mo\\xefselumpungu-15",
+        "id": "5-moïsebombito-15",
         "team": "CANADA",
         "number": 15,
-        "name": "Mo\\xefse Lumpungu",
+        "name": "Moïse Bombito",
         "image": "https://copaamerica.com/_next/image?url=%2Fplayers%2Fcanada%2Fcanada-15.png&w=384&q=75",
         "position": "Defensa"
       },
       {
-        "id": "5-maximecr\\xe9peau-16",
+        "id": "5-maximecrépeau-16",
         "team": "CANADA",
         "number": 16,
-        "name": "Maxime Cr\\xe9peau",
+        "name": "Maxime Crépeau",
         "image": "https://copaamerica.com/_next/image?url=%2Fplayers%2Fcanada%2Fcanada-16.png&w=384&q=75",
         "position": "Arquero"
       },
@@ -1013,10 +1013,10 @@
         "position": "Centro campista"
       },
       {
-        "id": "5-mathieuchoini\\xe8re-24",
+        "id": "5-mathieuchoinière-24",
         "team": "CANADA",
         "number": 24,
-        "name": "Mathieu Choini\\xe8re",
+        "name": "Mathieu Choinière",
         "image": "https://copaamerica.com/_next/image?url=%2Fplayers%2Fcanada%2Fcanada-24.png&w=384&q=75",
         "position": "Centro campista"
       },
@@ -1074,10 +1074,10 @@
         "position": "Centro campista"
       },
       {
-        "id": "6-kevincasta\\xf1o-5",
+        "id": "6-kevincastaño-5",
         "team": "COLOMBIA",
         "number": 5,
-        "name": "Kevin Casta\\xf1o",
+        "name": "Kevin Castaño",
         "image": "https://copaamerica.com/_next/image?url=%2Fplayers%2Fcolombia%2Fcolombia-05.png&w=384&q=75",
         "position": "Centro campista"
       },
@@ -1202,10 +1202,10 @@
         "position": "Centro campista"
       },
       {
-        "id": "6-danielmu\\xf1oz-21",
+        "id": "6-danielmuñoz-21",
         "team": "COLOMBIA",
         "number": 21,
-        "name": "Daniel Mu\\xf1oz",
+        "name": "Daniel Muñoz",
         "image": "https://copaamerica.com/_next/image?url=%2Fplayers%2Fcolombia%2Fcolombia-21.png&w=384&q=75",
         "position": "Lateral"
       },
@@ -1492,10 +1492,10 @@
         "position": "Defensa"
       },
       {
-        "id": "8-joelordo\\xf1ez-4",
+        "id": "8-joelordoñez-4",
         "team": "ECUADOR",
         "number": 4,
-        "name": "Joel Ordo\\xf1ez",
+        "name": "Joel Ordoñez",
         "image": "https://copaamerica.com/_next/image?url=%2Fplayers%2Fecuador%2Fecuador-04.png&w=384&q=75",
         "position": "Defensa"
       },
@@ -2107,42 +2107,42 @@
     "id": 11,
     "players": [
       {
-        "id": "11-juliogonz\\xe1lez-1",
+        "id": "11-juliogonzález-1",
         "team": "MEXICO",
         "number": 1,
-        "name": "Julio Gonz\\xe1lez",
+        "name": "Julio González",
         "image": "https://copaamerica.com/_next/image?url=%2Fplayers%2Fmexico%2Fmexico-01.png&w=384&q=75",
         "position": "Arquero"
       },
       {
-        "id": "11-jorges\\xe1nchez-2",
+        "id": "11-jorgesanchez-2",
         "team": "MEXICO",
         "number": 2,
-        "name": "Jorge S\\xe1nchez",
+        "name": "Jorge Sánchez",
         "image": "https://copaamerica.com/_next/image?url=%2Fplayers%2Fmexico%2Fmexico-02.png&w=384&q=75",
         "position": "Defensa"
       },
       {
-        "id": "11-c\\xe9sarmontes-3",
+        "id": "11-césarmontes-3",
         "team": "MEXICO",
         "number": 3,
-        "name": "C\\xe9sar Montes",
+        "name": "César Montes",
         "image": "https://copaamerica.com/_next/image?url=%2Fplayers%2Fmexico%2Fmexico-03.png&w=384&q=75",
         "position": "Defensa"
       },
       {
-        "id": "11-edson\\xc1lvarez-4",
+        "id": "11-edsonálvarez-4",
         "team": "MEXICO",
         "number": 4,
-        "name": "Edson \\xc1lvarez",
+        "name": "Edson Álvarez",
         "image": "https://copaamerica.com/_next/image?url=%2Fplayers%2Fmexico%2Fmexico-04.png&w=384&q=75",
         "position": "Centro campista"
       },
       {
-        "id": "11-johanv\\xe1squez-5",
+        "id": "11-johanvásquez-5",
         "team": "MEXICO",
         "number": 5,
-        "name": "Johan V\\xe1squez",
+        "name": "Johan VÁsquez",
         "image": "https://copaamerica.com/_next/image?url=%2Fplayers%2Fmexico%2Fmexico-05.png&w=384&q=75",
         "position": "Defensa"
       },
@@ -2163,18 +2163,18 @@
         "position": "Defensa"
       },
       {
-        "id": "11-carlosrodr\\xedguez-8",
+        "id": "11-carlosrodríguez-8",
         "team": "MEXICO",
         "number": 8,
-        "name": "Carlos Rodr\\xedguez",
+        "name": "Carlos Rodríguez",
         "image": "https://copaamerica.com/_next/image?url=%2Fplayers%2Fmexico%2Fmexico-08.png&w=384&q=75",
         "position": "Centro campista"
       },
       {
-        "id": "11-juli\\xe1nqui\\xf1ones-9",
+        "id": "11-juliánquiñones-9",
         "team": "MEXICO",
         "number": 9,
-        "name": "Juli\\xe1n Qui\\xf1ones",
+        "name": "Julián Quiñones",
         "image": "https://copaamerica.com/_next/image?url=%2Fplayers%2Fmexico%2Fmexico-09.png&w=384&q=75",
         "position": "Delantero"
       },
@@ -2203,18 +2203,18 @@
         "position": "Arquero"
       },
       {
-        "id": "11-jes\\xfasorozco-13",
+        "id": "11-jesúsorozco-13",
         "team": "MEXICO",
         "number": 13,
-        "name": "Jes\\xfas Orozco",
+        "name": "Jesús Orozco",
         "image": "https://copaamerica.com/_next/image?url=%2Fplayers%2Fmexico%2Fmexico-13.png&w=384&q=75",
         "position": "Defensa"
       },
       {
-        "id": "11-\\xc9ricks\\xe1nchez-14",
+        "id": "11-éricksánchez-14",
         "team": "MEXICO",
         "number": 14,
-        "name": "\\xc9rick S\\xe1nchez",
+        "name": "Érick Sánchez",
         "image": "https://copaamerica.com/_next/image?url=%2Fplayers%2Fmexico%2Fmexico-14.png&w=384&q=75",
         "position": "Delantero"
       },
@@ -2235,10 +2235,10 @@
         "position": "Centro campista"
       },
       {
-        "id": "11-orbel\\xednpineda-17",
+        "id": "11-orbelínpineda-17",
         "team": "MEXICO",
         "number": 17,
-        "name": "Orbel\\xedn Pineda",
+        "name": "Orbelín Pineda",
         "image": "https://copaamerica.com/_next/image?url=%2Fplayers%2Fmexico%2Fmexico-17.png&w=384&q=75",
         "position": "Centro campista"
       },
@@ -2259,26 +2259,26 @@
         "position": "Defensa"
       },
       {
-        "id": "11-briangarc\\xeda-20",
+        "id": "11-briangarcía-20",
         "team": "MEXICO",
         "number": 20,
-        "name": "Brian Garc\\xeda",
+        "name": "Brian García",
         "image": "https://copaamerica.com/_next/image?url=%2Fplayers%2Fmexico%2Fmexico-20.png&w=384&q=75",
         "position": "Defensa"
       },
       {
-        "id": "11-c\\xe9sarhuerta-21",
+        "id": "11-césarhuerta-21",
         "team": "MEXICO",
         "number": 21,
-        "name": "C\\xe9sar Huerta",
+        "name": "César Huerta",
         "image": "https://copaamerica.com/_next/image?url=%2Fplayers%2Fmexico%2Fmexico-21.png&w=384&q=75",
         "position": "Delantero"
       },
       {
-        "id": "11-guillermomart\\xednez-22",
+        "id": "11-guillermomartínez-22",
         "team": "MEXICO",
         "number": 22,
-        "name": "Guillermo Mart\\xednez",
+        "name": "Guillermo Martínez",
         "image": "https://copaamerica.com/_next/image?url=%2Fplayers%2Fmexico%2Fmexico-22.png&w=384&q=75",
         "position": "Delantero"
       },
@@ -2291,10 +2291,10 @@
         "position": "Arquero"
       },
       {
-        "id": "11-luisch\\xe1vez-24",
+        "id": "11-luischávez-24",
         "team": "MEXICO",
         "number": 24,
-        "name": "Luis Ch\\xe1vez",
+        "name": "Luis Chávez",
         "image": "https://copaamerica.com/_next/image?url=%2Fplayers%2Fmexico%2Fmexico-24.png&w=384&q=75",
         "position": "Centro campista"
       },
@@ -2307,10 +2307,10 @@
         "position": "Centro campista"
       },
       {
-        "id": "11-bryangonz\\xe1lez-26",
+        "id": "11-bryangonzález-26",
         "team": "MEXICO",
         "number": 26,
-        "name": "Bryan Gonz\\xe1lez",
+        "name": "Bryan González",
         "image": "https://copaamerica.com/_next/image?url=%2Fplayers%2Fmexico%2Fmexico-26.png&w=384&q=75",
         "position": "Centro campista"
       }
@@ -2504,10 +2504,10 @@
         "position": "Defensa"
       },
       {
-        "id": "12-edgardofari\\xf1a-24",
+        "id": "12-edgardofariña-24",
         "team": "PANAMA",
         "number": 24,
-        "name": "Edgardo Fari\\xf1a",
+        "name": "Edgardo Fariña",
         "image": "https://copaamerica.com/_next/image?url=%2Fplayers%2Fpanama%2Fpanama-24.png&w=384&q=75",
         "position": "Defensa"
       },
@@ -2802,10 +2802,10 @@
         "position": "Centro campista"
       },
       {
-        "id": "14-sergiope\\xf1a-8",
+        "id": "14-sergiopeña-8",
         "team": "PERU",
         "number": 8,
-        "name": "Sergio Pe\\xf1a",
+        "name": "Sergio Peña",
         "image": "https://copaamerica.com/_next/image?url=%2Fplayers%2Fperú%2Fperú-08.png&w=384&q=75",
         "position": "Centro campista"
       },
@@ -3087,10 +3087,10 @@
         "position": "Defensa"
       },
       {
-        "id": "15-matias vi\\xf1a-17",
+        "id": "15-matiasviña-17",
         "team": "URUGUAY",
         "number": 17,
-        "name": "Matias  Vi\\xf1a",
+        "name": "Matias  Viña",
         "image": "https://copaamerica.com/_next/image?url=%2Fplayers%2Furuguay%2Furuguay-17.png&w=384&q=75",
         "position": "Lateral"
       },
@@ -3103,10 +3103,10 @@
         "position": "Centro campista"
       },
       {
-        "id": "15-darwinnu\\xf1ez-19",
+        "id": "15-darwinnuñez-19",
         "team": "URUGUAY",
         "number": 19,
-        "name": "Darwin Nu\\xf1ez",
+        "name": "Darwin Nuñez",
         "image": "https://copaamerica.com/_next/image?url=%2Fplayers%2Furuguay%2Furuguay-19.png&w=384&q=75",
         "position": "Delantero"
       },
