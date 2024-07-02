@@ -5,6 +5,9 @@ import Action from "../components/Action.astro";
 import TeamFlagCard from "../components/TeamFlagCard.astro";
 
 import TEAMS from "../../public/teams.json";
+import GitHub from "../components/logos/GitHub.astro";
+import Linkedin from "../components/logos/Linkedin.astro";
+import Instagram from "../components/logos/Instagram.astro";
 ---
 
 <Layout title="Coam">
@@ -58,14 +61,36 @@ import TEAMS from "../../public/teams.json";
     <h2 class="text-6xl text-center mb-20">Sobre el proyecto</h2>
     <img />
 
-    <div class="flex justify-evenly mb-10 items-center">
-      <div class="hidden lg:flex flex-col gap-2">
-        <span class="block h-10 w-10 bg-black rounded-md"></span>
-        <span class="block h-10 w-10 bg-black rounded-md"></span>
-        <span class="block h-10 w-10 bg-black rounded-md"></span>
+    <div class="flex justify-evenly items-center mb-10">
+      <div class="hidden lg:flex flex-col items-center gap-1">
+        <a
+          href="https://github.com/joaquinvesapa"
+          rel="nopener noreferer"
+          target="_blank"
+          ><GitHub class="w-8 hover:scale-[1.05] transition-transform" /></a
+        >
+        <a
+          href="https://www.linkedin.com/in/joaquin-vesapa/"
+          rel="nopener noreferer"
+          target="_blank"
+          ><Linkedin class="w-7 hover:scale-[1.05] transition-transform" /></a
+        >
+        <a
+          href="https://www.instagram.com/joaco.vesapa/"
+          rel="nopener noreferer"
+          target="_blank"
+          ><Instagram class="w-10 hover:scale-[1.05] transition-transform" /></a
+        >
       </div>
       <div
-        class="hidden lg:block relative group aspect-square w-48 rounded-lg bg-black"
+        class="hidden
+          lg:block
+          relative
+          group
+          aspect-square
+          w-48
+          rounded-lg
+          bg-black"
       >
         <img
           class="border-[3px] border-black rounded-md h-full w-full object-cover"
@@ -106,13 +131,25 @@ import TEAMS from "../../public/teams.json";
           >Guido Cardarelli</span
         >
       </div>
-      <div class="hidden lg:flex flex-col gap-2">
-        <span class="block h-10 w-10 border-[3px] border-black rounded-md"
-        ></span>
-        <span class="block h-10 w-10 border-[3px] border-black rounded-md"
-        ></span>
-        <span class="block h-10 w-10 border-[3px] border-black rounded-md"
-        ></span>
+      <div class="hidden lg:flex flex-col items-center gap-1">
+        <a
+          href="https://github.com/guidocarda"
+          rel="nopener noreferer"
+          target="_blank"
+          ><GitHub class="w-8 hover:scale-[1.05] transition-transform" /></a
+        >
+        <a
+          href="https://www.linkedin.com/in/guido-cardarelli/"
+          rel="nopener noreferer"
+          target="_blank"
+          ><Linkedin class="w-7 hover:scale-[1.05] transition-transform" /></a
+        >
+        <a
+          href="https://www.instagram.com/guidocarda/"
+          rel="nopener noreferer"
+          target="_blank"
+          ><Instagram class="w-10 hover:scale-[1.05] transition-transform" /></a
+        >
       </div>
     </div>
 
