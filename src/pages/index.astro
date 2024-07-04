@@ -61,48 +61,53 @@ import Instagram from "../components/logos/Instagram.astro";
     <h2 class="text-6xl text-center mb-20">Sobre el proyecto</h2>
     <img />
 
-    <div class="flex justify-evenly items-center mb-10">
-      <div class="hidden lg:flex flex-col items-center gap-1">
-        <a
-          href="https://github.com/joaquinvesapa"
-          rel="nopener noreferer"
-          target="_blank"
-          ><GitHub class="w-8 hover:scale-[1.05] transition-transform" /></a
+    <div
+      class="flex flex-col-reverse gap-10 md:flex-row md:gap-4 justify-evenly items-center mb-10"
+    >
+      <div class="flex flex-col-reverse gap-2 md:flex-row">
+        <div
+          class="flex flex-row justify-center md:flex-col items-center gap-1"
         >
-        <a
-          href="https://www.linkedin.com/in/joaquin-vesapa/"
-          rel="nopener noreferer"
-          target="_blank"
-          ><Linkedin class="w-7 hover:scale-[1.05] transition-transform" /></a
-        >
-        <a
-          href="https://www.instagram.com/joaco.vesapa/"
-          rel="nopener noreferer"
-          target="_blank"
-          ><Instagram class="w-10 hover:scale-[1.05] transition-transform" /></a
-        >
+          <a
+            href="https://github.com/joaquinvesapa"
+            rel="nopener noreferer"
+            target="_blank"
+            ><GitHub class="w-8 hover:scale-[1.05] transition-transform" /></a
+          >
+          <a
+            href="https://www.linkedin.com/in/joaquin-vesapa/"
+            rel="nopener noreferer"
+            target="_blank"
+            ><Linkedin class="w-7 hover:scale-[1.05] transition-transform" /></a
+          >
+          <a
+            href="https://www.instagram.com/joaco.vesapa/"
+            rel="nopener noreferer"
+            target="_blank"
+            ><Instagram
+              class="w-10 hover:scale-[1.05] transition-transform"
+            /></a
+          >
+        </div>
+        <h2 class="block md:hidden text-xl text-center">
+          Joaquin Vesco Aparicio
+        </h2>
+
+        <div class="relative group aspect-square w-48 rounded-lg bg-black">
+          <img
+            class="border-[3px] border-black rounded-md h-full w-full object-cover"
+            src="/devs/joaco.webp"
+          />
+          <h2
+            class="absolute text-xl hidden md:block group-hover:translate-y-8 opacity-0 group-hover:opacity-100 transition-all -z-10 -bottom-0 text-center w-full left-0"
+          >
+            Joaquin Vesco Aparicio
+          </h2>
+        </div>
       </div>
-      <div
-        class="hidden
-          lg:block
-          relative
-          group
-          aspect-square
-          w-48
-          rounded-lg
-          bg-black"
-      >
-        <img
-          class="border-[3px] border-black rounded-md h-full w-full object-cover"
-          src="/devs/joaco.webp"
-        />
-        <span
-          class="absolute text-xl group-hover:translate-y-8 opacity-0 group-hover:opacity-100 transition-all -z-10 -bottom-0 text-center w-full left-0"
-          >Joaquin Vesco Aparicio</span
-        >
-      </div>
+
       <p
-        class="text-center lg:text-left text-2xl leading-7 text-balance max-w-[70ch]"
+        class="text-center md:text-left text-2xl leading-7 text-balance max-w-[70ch]"
       >
         Somos dos desarrolladores de software que buscan sumar proyectos copados
         a nuestro portfolio y darnos a conocer. Por eso, nos mandamos a hacer
@@ -110,46 +115,44 @@ import Instagram from "../components/logos/Instagram.astro";
       </p>
     </div>
 
-    <div class="flex justify-evenly items-center">
+    <div
+      class="flex flex-col-reverse gap-10 justify-evenly md:flex-row md:gap-4 items-center"
+    >
       <p
-        class="text-center lg:text-right text-2xl leading-7 mt-4 text-balance max-w-[70ch]"
+        class="text-center md:text-right text-2xl leading-7 mt-4 text-balance max-w-[70ch]"
       >
         Aunque no somos fanáticos del fútbol ni expertos en datos, nos encanta
         la tecnología y creemos que podemos aportar una mirada fresca. Con este
         proyecto, queremos demostrar nuestras habilidades y divertirnos en el
         proceso.
       </p>
-      <div
-        class="hidden lg:block relative group aspect-square w-48 rounded-lg bg-black"
-      >
-        <img
-          class="border-[3px] border-black rounded-md h-full w-full object-cover"
-          src="/devs/guido.webp"
-        />
-        <span
-          class="absolute text-xl group-hover:translate-y-8 opacity-0 group-hover:opacity-100 transition-all -z-10 -bottom-0 text-center w-full left-0"
-          >Guido Cardarelli</span
-        >
-      </div>
-      <div class="hidden lg:flex flex-col items-center gap-1">
-        <a
-          href="https://github.com/guidocarda"
-          rel="nopener noreferer"
-          target="_blank"
-          ><GitHub class="w-8 hover:scale-[1.05] transition-transform" /></a
-        >
-        <a
-          href="https://www.linkedin.com/in/guido-cardarelli/"
-          rel="nopener noreferer"
-          target="_blank"
-          ><Linkedin class="w-7 hover:scale-[1.05] transition-transform" /></a
-        >
-        <a
-          href="https://www.instagram.com/guidocarda/"
-          rel="nopener noreferer"
-          target="_blank"
-          ><Instagram class="w-10 hover:scale-[1.05] transition-transform" /></a
-        >
+      <div class="flex flex-col gap-4 md:flex-row">
+        <div class="relative group aspect-square w-48 rounded-lg bg-black">
+          <img
+            class="border-[3px] border-black rounded-md h-full w-full object-cover"
+            src="/devs/guido.webp"
+          />
+          <h2
+            class="absolute text-xl hidden md:block group-hover:translate-y-8 opacity-0 group-hover:opacity-100 transition-all -z-10 -bottom-0 text-center w-full left-0"
+          >
+            Guido Cardarelli
+          </h2>
+        </div>
+        <h2 class="block md:hidden text-xl text-center">Guido Cardarelli</h2>
+        <div class="flex justify-center md:flex-col items-center gap-1">
+          <a
+            href="https://github.com/guidocarda"
+            rel="nopener noreferer"
+            target="_blank"
+            ><GitHub class="w-8 hover:scale-[1.05] transition-transform" /></a
+          >
+          <a
+            href="https://www.linkedin.com/in/guido-cardarelli/"
+            rel="nopener noreferer"
+            target="_blank"
+            ><Linkedin class="w-7 hover:scale-[1.05] transition-transform" /></a
+          >
+        </div>
       </div>
     </div>
 
